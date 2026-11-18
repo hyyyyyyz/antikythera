@@ -1,58 +1,66 @@
-# Antikythera
+<h1 align="center">Antikythera</h1>
+<p align="center"><strong>English</strong> &nbsp;·&nbsp; <a href="docs/README.zh-CN.md">简体中文</a> &nbsp;·&nbsp; <a href="docs/README.zh-TW.md">繁體中文</a></p>
+<p align="center"><strong>A year of GitHub commits, played as a single-arm arcade game.</strong></p>
+<p align="center">
+  <a href="https://github.com/hyyyyyyz/antikythera/actions/workflows/check.yml"><img alt="Calendar tests" src="https://github.com/hyyyyyyz/antikythera/actions/workflows/check.yml/badge.svg?branch=main"></a>
+  <a href="https://github.com/hyyyyyyz/antikythera/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/hyyyyyyz/antikythera?color=44687a&amp;label=release"></a>
+</p>
 
-A rendered Franka Panda rides a yellow four-wheel shuttle beneath your GitHub commit calendar. It stops at active days, lifts the actual tiles into its cargo tray, then puts them back on the return trip. The route loops continuously.
+![A Franka Panda clears commit tiles from its yellow shuttle. A lunar antenna transmits and a victory flag rises.](gallery/assembly-log.svg)
 
-![Panda shuttle collecting and returning GitHub commit tiles](gallery/assembly-log.svg)
+In **First Light**, a Franka Panda rides beneath your calendar and clears active dates with bursts of light. Each date goes dark on impact. After the last tile, a lunar antenna unfolds, sends its first signal and raises a gold victory pennant.
 
-The calendar stays in one strip on phones and desktops. Reduced-motion visitors see the parked shuttle and the complete year. An empty calendar also stays parked.
+[Quick start](#quick-start) · [GitHub Action](#github-action) · [Local development](#local-development)
 
-## Put it on your profile
+## Quick start
 
-Fork this repository, enable GitHub Actions, and run **Refresh calendar** once from the Actions tab. The workflow reads the fork owner's public commit contributions and writes `gallery/assembly-log.svg`. It refreshes daily at 03:19 UTC. The first run replaces the upstream example included in your fork.
-
-Add the following to your profile README, replacing `YOUR-LOGIN` with your GitHub login. If you rename the fork, also update the repository name in the URL.
+1. Create a public fork under your GitHub account. [Fork Antikythera](https://github.com/hyyyyyyz/antikythera/fork)
+2. In your fork, enable Actions. Open **Actions → Refresh calendar → Run workflow** on the default branch. The first successful run replaces the example with your calendar.
+3. Paste this line into your profile README. Replace `YOUR-LOGIN` with your username. If you renamed the fork or its default branch, adjust the URL too.
 
 ```markdown
 ![My commit calendar](https://raw.githubusercontent.com/YOUR-LOGIN/antikythera/main/gallery/assembly-log.svg)
 ```
 
-## Use the Action in another repository
+The included workflow refreshes the SVG daily at 03:19 UTC. Your profile keeps the same image URL. [Publishing workflow](.github/workflows/calendar.yml)
 
-After checking out your repository, run the action in an Ubuntu job. The generated SVG is a local file in the caller's workspace. Commit it to the branch your README references, or publish it alongside your other generated assets.
+## GitHub Action
+
+To generate the calendar in an existing repository, add this step after checkout in an Ubuntu job.
 
 ```yaml
-- uses: hyyyyyyz/antikythera@v1.1.0
+- uses: hyyyyyyz/antikythera@v1.2.0
   with:
     username: ${{ github.repository_owner }}
-    output: assets/assembly-log.svg
+    output: assets/first-light.svg
 ```
+
+The step writes the SVG to the job's workspace. Publish that file on the branch your README uses. Reading contributions requires read access. Committing the image from a workflow also requires `contents: write`.
 
 | Input | Default | Purpose |
 | --- | --- | --- |
-| `username` | Repository owner | GitHub user to draw |
-| `output` | `assembly-log.svg` | Destination file |
-| `compact-output` | Omitted | Optional second path for the same single-strip SVG |
-| `token` | Workflow token | Authentication for GitHub GraphQL |
+| `username` | Repository owner | GitHub account whose public commits appear |
+| `output` | `assembly-log.svg` | File path in the caller's workspace |
+| `compact-output` | Omitted | Optional second path for the same single-strip image |
+| `token` | `${{ github.token }}` | Token used to read GitHub's GraphQL API |
 
-The rendering step works with read access. The included publishing workflow also needs permission to commit to the default branch. See the [working workflow](.github/workflows/calendar.yml).
+## Reading the calendar
 
-## Reading the board
+The board covers 365 days ending today in UTC. Weeks run left to right, with Sunday at the top. Each tile counts commits GitHub credits to that user in public repositories. [GitHub's contribution rules](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference)
 
-Weeks run left to right, with Sunday at the top. The board covers 365 days ending on the current UTC date. The palest squares in light mode and the darkest squares in dark mode mark zero commits. Nine shades of blue distinguish **1, 2, 3, 4–5, 6–9, 10–19, 20–39, 40–79, and 80+**. Darker blues in light mode and lighter blues in dark mode indicate more commits. The shuttle visits up to six occupied days across the year, including the latest active day. It carries up to three tiles at once. A tile slot stays empty only while its tile is in the gripper or on the shuttle. The underlying counts stay intact.
+An empty socket means zero commits. Nine shades of blue mark **1, 2, 3, 4–5, 6–9, 10–19, 20–39, 40–79 and 80+**. The SVG adapts to light and dark themes. Visitors who prefer reduced motion see the full calendar and a parked shuttle. An empty year stays idle.
 
-Counts come from the daily `commitCount` records in GitHub's GraphQL contribution collection. Only public repositories are included. GitHub applies its profile contribution and attribution rules, so this measures commits credited on your profile. Issues, reviews, and pull requests are separate contribution types. [GitHub's contribution rules](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference)
+## Local development
 
-## Run locally
-
-Use Python 3.9 or later and the authenticated GitHub CLI. Rendering uses only the Python standard library. Authentication can come from `gh auth login` or the `GH_TOKEN` environment variable.
+Use Python 3.9 or later and an authenticated GitHub CLI (`gh auth login` or `GH_TOKEN`). The daily renderer uses the Python standard library.
 
 ```sh
-python3 assembly.py --username YOUR-LOGIN --output assembly-log.svg
+python3 assembly.py --username YOUR-LOGIN --output first-light.svg
 python3 -m unittest discover -s tests -v
 ```
 
-The renderer completes the data request before replacing the output. Over-capacity queries are retried with smaller date windows. An incomplete single day stops the refresh and preserves the previous image.
+The arm's 3D poses are baked in MuJoCo. The shuttle, light pulses, folding reflector and pennant play inside the SVG. [Art pipeline](art/README.md)
 
-## Artwork and license
+## License
 
-The arm uses the Franka Emika Panda meshes and joint model from MuJoCo Menagerie. The shuttle, road and choreography were created for Antikythera. The daily workflow uses the baked artwork and does not install MuJoCo. [Art pipeline](art/README.md) · [Model source and Apache-2.0 attribution](third_party/panda/README.md) · [Code and original artwork license](LICENSE)
+The code and original artwork use the MIT license. The Franka Panda geometry uses Apache-2.0. [MIT license](LICENSE) · [Model source and attribution](third_party/panda/README.md)
