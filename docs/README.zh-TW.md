@@ -1,14 +1,16 @@
 <h1 align="center">Antikythera</h1>
 <p align="center"><a href="../README.md">English</a> &nbsp;·&nbsp; <a href="README.zh-CN.md">简体中文</a> &nbsp;·&nbsp; <strong>繁體中文</strong></p>
-<p align="center"><strong>把一整年的 GitHub 提交紀錄變成機械手臂的街機關卡。</strong></p>
+<p align="center"><strong>為 GitHub 個人首頁設計的動態提交日曆。</strong></p>
 <p align="center">
   <a href="https://github.com/hyyyyyyz/antikythera/actions/workflows/check.yml"><img alt="日曆測試" src="https://github.com/hyyyyyyz/antikythera/actions/workflows/check.yml/badge.svg?branch=main"></a>
   <a href="https://github.com/hyyyyyyz/antikythera/releases/latest"><img alt="最新版本" src="https://img.shields.io/github/v/release/hyyyyyyz/antikythera?color=44687a&amp;label=release"></a>
 </p>
 
-![Franka Panda 搭著黃色小車，以光束清除提交方塊。月面天線發出訊號後，勝利旗隨之升起。](../gallery/assembly-log.svg)
+![固定基座上的 Franka Panda 手持紅色蓋亞狂徒，清空提交方塊後，金色小旗在機械手臂旁升起。](../gallery/assembly-log.svg)
 
-在《第一束訊號》（First Light）裡，Franka Panda 沿著日曆下方的道路前進，用光束逐一擊中有提交的日期。每命中一格，那一天就會暗下來。最後一格清空後，月面天線展開，送出第一束訊號，再升起金色的勝利旗。
+Franka Panda 在固定基座上轉動手腕，依每張日曆特有的順序發出光束，逐一擊中有提交的日期。最後一個方塊熄滅，一面金色小旗從機械手臂旁升起。
+
+Jason 的首頁範例使用紅色原版 **Gaia’s Vengeance Vandal** 的模型算繪圖。通用 Action 預設採用原創光束發射器。[同人美術與作者標示](../gallery/artwork/README.md)
 
 [快速上手](#快速上手) · [使用 GitHub Action](#使用-github-action) · [本機開發](#本機開發)
 
@@ -19,9 +21,11 @@
 3. 將下方這行貼到個人首頁的 README，並將 `YOUR-LOGIN` 換成你的 GitHub 使用者名稱。若有更改儲存庫名稱或預設分支，也請一併修改網址。
 
 ```markdown
-![我的提交日曆](https://raw.githubusercontent.com/YOUR-LOGIN/antikythera/main/gallery/assembly-log.svg)
+![固定基座上的 Franka Panda 手持紅色蓋亞狂徒，清空提交方塊後，金色小旗在機械手臂旁升起。](https://raw.githubusercontent.com/YOUR-LOGIN/antikythera/main/gallery/assembly-log.svg)
 ```
+Franka Panda 在固定基座上轉動手腕，依每張日曆特有的順序發出光束，逐一擊中有提交的日期。最後一個方塊熄滅，一面金色小旗從機械手臂旁升起。
 
+Jason 的首頁範例使用紅色原版 **Gaia’s Vengeance Vandal** 的模型算繪圖。通用 Action 預設採用原創光束發射器。[同人美術與作者標示](../gallery/artwork/README.md)
 內建的工作流程每天於 UTC 03:19 更新 SVG，個人首頁可持續使用同一個圖片網址。[發佈工作流程](../.github/workflows/calendar.yml)
 
 ## 使用 GitHub Action
@@ -29,7 +33,7 @@
 若要在既有儲存庫產生日曆，請在 Ubuntu 作業的 checkout 步驟之後加入以下設定。
 
 ```yaml
-- uses: hyyyyyyz/antikythera@v1.2.0
+- uses: hyyyyyyz/antikythera@v1.3.0
   with:
     username: ${{ github.repository_owner }}
     output: assets/first-light.svg
@@ -42,13 +46,14 @@
 | `username` | 儲存庫擁有者 | 要顯示其公開提交的 GitHub 帳號 |
 | `output` | `assembly-log.svg` | 輸出至呼叫端工作目錄的路徑 |
 | `compact-output` | 省略 | 選用的第二個輸出路徑，內容為同一張單列日曆 |
+| `artwork` | 原創光束發射器 | 選用，呼叫端儲存庫中 SVG 道具插畫的路徑 |
 | `token` | `${{ github.token }}` | 讀取 GitHub GraphQL API 的權杖 |
 
 ## 如何閱讀日曆
 
 日曆顯示截至 UTC 當天的最近 365 天。每一欄代表一週，由左至右排列，星期日位於最上方。每格統計 GitHub 歸入該使用者個人貢獻的公開儲存庫提交。[GitHub 貢獻統計規則](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference)
 
-每一輪開始時，空格代表當天沒有提交。被光束清除的格子會在下一輪開始時重新亮起。九階藍色依序代表 **1、2、3、4–5、6–9、10–19、20–39、40–79、80 次以上（含 80 次）**。SVG 會配合淺色或深色主題。系統開啟「減少動態效果」時，會顯示完整日曆和停靠的小車。全年都沒有提交時，場景會維持靜止。
+每一輪開始時，空格代表當天沒有提交。被光束清除的格子會在下一輪開始時重新亮起。九階藍色依序代表 **1、2、3、4–5、6–9、10–19、20–39、40–79、80 次以上（含 80 次）**。SVG 會配合淺色或深色主題。系統開啟「減少動態效果」時，會顯示整年日曆與靜止的機械手臂。全年都沒有提交時，場景會維持靜止。
 
 ## 本機開發
 
@@ -59,8 +64,8 @@ python3 assembly.py --username YOUR-LOGIN --output first-light.svg
 python3 -m unittest discover -s tests -v
 ```
 
-機械手臂的三維姿態由 MuJoCo 預先算繪，小車、光束、折疊天線與旗幟的動畫都在 SVG 內播放。[美術素材製作流程](../art/README.md)
+機械手臂、夾爪與基座以同一台正交攝影機預先算繪。手持道具、光束與旗幟也封裝於同一張 SVG 中，嵌入 README 即可播放。[美術流程與自訂道具](../art/README.md)
 
 ## 授權
 
-程式碼與原創美術採用 MIT 授權，Franka Panda 模型採用 Apache-2.0 授權。[MIT 授權條款](../LICENSE) · [模型來源與作者標示](../third_party/panda/README.md)
+程式碼、基座與預設道具採用 MIT 授權，Franka Panda 模型採用 Apache-2.0 授權。範例中的《特戰英豪》同人美術另有來源與使用條款。[MIT 授權條款](../LICENSE) · [Panda 模型來源](../third_party/panda/README.md) · [範例美術](../gallery/artwork/README.md)

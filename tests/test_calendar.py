@@ -1,4 +1,7 @@
 from datetime import date, timedelta
+from pathlib import Path
+
+from artwork import read_plate
 import unittest
 from xml.etree import ElementTree as ET
 
@@ -54,7 +57,7 @@ class Drawing(unittest.TestCase):
             self.assertIn(str(end - timedelta(days=364)), sockets[0].text)
             self.assertIn(str(end), sockets[-1].text)
             self.assertFalse(svg.findall(".//s:animate", SVG))
-            self.assertIn("parked", svg.find("s:desc", SVG).text)
+            self.assertIn("rests", svg.find("s:desc", SVG).text)
 
     def test_only_real_active_dates_are_animated(self):
         last = END - timedelta(days=35)
@@ -73,19 +76,20 @@ class Drawing(unittest.TestCase):
         visibility = selected[0].find("s:animate", SVG)
         self.assertEqual(visibility.get("values").split(";"), ["1", "0", "0"])
         for scene in ("moving", "still"):
-            shuttle = svg.find(f"s:g[@class='{scene}']/s:g[@data-part='shuttle']", SVG)
-            self.assertEqual(
-                [a.get("data-arm") for a in shuttle.findall("s:g[@data-arm]", SVG)],
-                ["panda"],
-            )
-        self.assertEqual(len(svg.findall(".//s:g[@data-part='transmission']", SVG)), 1)
+            arms = svg.findall(f"s:g[@class='{scene}']/s:g[@data-arm='panda']", SVG)
+            self.assertEqual(len(arms), 1)
+            self.assertIsNone(arms[0].find("s:animateTransform", SVG))
+        platform = svg.findall(".//s:g[@data-part='fixed-platform']", SVG)
+        self.assertEqual(len(platform), 1)
+        self.assertIsNone(platform[0].find(".//s:animateTransform", SVG))
+        self.assertIsNone(svg.find(".//s:g[@data-part='transmission']", SVG))
         self.assertEqual(len(svg.findall(".//s:g[@data-part='victory-flag']", SVG)), 1)
         still = svg.find("s:g[@class='still']", SVG)
         self.assertIsNone(still.find(".//s:g[@data-part='victory-flag']", SVG))
         self.assertIsNone(still.find(".//s:path[@data-part='pulse']", SVG))
         self.assertIn("prefers-reduced-motion", svg.find("s:style", SVG).text)
         self.assertIsNotNone(
-            svg.find("s:g[@class='still']/s:g[@data-part='shuttle']", SVG)
+            svg.find("s:g[@class='still']/s:g[@data-arm='panda']", SVG)
         )
         self.assertFalse(svg.findall(".//s:image", SVG))
         ids = {node.get("id") for node in svg.iter() if node.get("id")}
@@ -105,6 +109,27 @@ class Drawing(unittest.TestCase):
                 self.assertTrue(all(v[0] == "#" and v[1:] in ids for v in values))
         for use in svg.findall(".//s:use", SVG):
             self.assertIn(use.get("href")[1:], ids)
+
+    def test_gallery_includes_the_model_credit_and_embedded_art(self):
+        example = (
+            Path(__file__).resolve().parents[1] / "gallery" / "artwork" / "gaia.svg"
+        )
+        svg = ET.fromstring(render("sample", END, {END: 1}, read_plate(example)))
+        wrist = svg.find(".//s:g[@id='prop-art']", SVG)
+        self.assertEqual(
+            wrist.findtext("s:title", namespaces=SVG), "Gaia’s Vengeance Vandal"
+        )
+        self.assertIn("ILilMitch", svg.findtext("s:metadata", namespaces=SVG))
+        self.assertIn("Riot Games", svg.findtext("s:metadata", namespaces=SVG))
+        self.assertTrue(wrist.findall(".//s:path", SVG))
+        self.assertIsNone(svg.find(".//s:image", SVG))
+        for grip in svg.findall(".//s:g[@data-part='grip']", SVG):
+            layers = [
+                e.get("href") or e.get("data-part")
+                for e in grip
+                if e.tag != "{" + SVG["s"] + "}animateTransform"
+            ]
+            self.assertEqual(layers, ["#h0", "wrist-art", "#finger0"])
 
     def test_chip_thresholds(self):
         for i, (threshold, _, _) in enumerate(BANDS):

@@ -1,6 +1,5 @@
 """Offline orthographic studio for the Panda; unused by the daily Action."""
 
-from math import cos, sin
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -10,20 +9,14 @@ from PIL import Image
 from scipy.optimize import least_squares
 from scipy.spatial.transform import Rotation
 
-from chassis import add_shuttle, values
+from plinth import MOUNT, add_plinth, values
 
-# Display units, before 2x rasterization. The origin is the cart's ground anchor.
+# Display units, before 2x rasterization. The arm and plinth share one projection origin.
 SIZE = (236, 236)
 ORIGIN = np.array([151.0, 214.0])
 DENSITY = 2
 PPM = 168.0
-ROAD_Y = 187.0
-TOP = 28.0
-PITCH = 15.0
-SQUARE = 11.5
-PICK_X = -84.0
-RACK = np.array([0.275, 0.018, 0.319])
-LAYER = 0.054
+LOW = np.array([0.275, 0.018, 0.319])
 READY = np.array([0.26, 0.015, 0.60])
 
 
@@ -44,33 +37,24 @@ def project(point):
     return np.array([RIGHT @ point, -UP @ point]) * PPM
 
 
-def row_target(row):
-    """A world-space pinch point that projects to the exact calendar cell."""
-    px, py = PICK_X, TOP + row * PITCH + SQUARE / 2 - ROAD_Y
-    y = -0.025
-    x = (px / PPM - RIGHT[1] * y) / RIGHT[0]
-    z = (-py / PPM - UP[0] * x - UP[1] * y) / UP[2]
-    return np.array([x, y, z])
-
-
 class Studio:
     def __init__(self, folder):
         folder = Path(folder).resolve()
         tree = ET.parse(folder / "panda.xml")
         root = tree.getroot()
         root.find("compiler").set("meshdir", str(folder / "assets"))
-        root.find(".//body[@name='link0']").set("pos", "-.12 0 .29")
+        root.find(".//body[@name='link0']").set("pos", values(MOUNT))
         for name in ("hand", "left_finger", "right_finger"):
             for geom in root.find(f".//body[@name='{name}']").findall(
                 "geom[@class='visual']"
             ):
-                geom.set("group", "4")
+                geom.set("group", "5" if name == "left_finger" else "4")
         hand = root.find(".//body[@name='hand']")
         ET.SubElement(
             hand, "site", name="pinch", pos="0 0 .1034", size=".002", rgba="0 0 0 0"
         )
         root.find("./asset/material[@name='black']").set("rgba", ".13 .15 .17 1")
-        add_shuttle(root)
+        add_plinth(root)
         world = root.find("worldbody")
         center = RIGHT * ((SIZE[0] / 2 - ORIGIN[0]) / PPM) + UP * (
             (ORIGIN[1] - SIZE[1] / 2) / PPM
@@ -157,10 +141,9 @@ class Studio:
             )
         return q
 
-    def set_joints(self, q, jaw=0.036, wheel=0):
+    def set_joints(self, q):
         self.data.qpos[:7] = q
-        self.data.qpos[7:] = jaw
-        self.data.mocap_quat[:] = (cos(wheel / 2), 0, sin(wheel / 2), 0)
+        self.data.qpos[7:] = 0.027
         mujoco.mj_forward(self.model, self.data)
 
     def image(self, group):

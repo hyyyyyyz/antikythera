@@ -1,5 +1,5 @@
 name: Antikythera Commit Calendar
-description: Play First Light on your public commit calendar with a Franka Panda, a lunar relay and a victory flag.
+description: Animate a year of public commits with a pedestal-mounted Franka Panda and a victory pennant.
 author: Jason Huang
 branding:
   icon: cpu
@@ -16,6 +16,9 @@ inputs:
     description: SVG path relative to the caller's working directory.
     required: false
     default: assembly-log.svg
+  artwork:
+    description: Optional path to a wrist illustration in the caller repository.
+    required: false
   compact-output:
     description: Optional second destination for the same single-strip SVG.
     required: false
@@ -28,8 +31,10 @@ runs:
         GH_TOKEN: ${{ inputs.token }}
         CALENDAR_USER: ${{ inputs.username }}
         CALENDAR_OUTPUT: ${{ inputs.output }}
+        WRIST_ART: ${{ inputs.artwork }}
         COMPACT_OUTPUT: ${{ inputs.compact-output }}
       run: |
         args=(--username "${CALENDAR_USER:-$GITHUB_REPOSITORY_OWNER}" --output "$CALENDAR_OUTPUT")
+        if [[ -n "$WRIST_ART" ]]; then args+=(--artwork "$WRIST_ART"); fi
         if [[ -n "$COMPACT_OUTPUT" ]]; then args+=(--compact-output "$COMPACT_OUTPUT"); fi
         python3 "$GITHUB_ACTION_PATH/assembly.py" "${args[@]}"

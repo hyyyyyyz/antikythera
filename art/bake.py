@@ -9,92 +9,47 @@ from pathlib import Path
 import numpy as np
 from outlines import symbols
 
-from studio import (
-    DENSITY,
-    LAYER,
-    ORIGIN,
-    PICK_X,
-    PITCH,
-    RACK,
-    READY,
-    ROAD_Y,
-    SQUARE,
-    TOP,
-    Studio,
-    project,
-    row_target,
-)
-
-WHEEL_FRAMES = 16
-CAPACITY = 3
+from studio import DENSITY, LOW, ORIGIN, READY, Studio, project
 
 
 def bake(source, output):
     studio = Studio(source)
     output.mkdir(parents=True, exist_ok=True)
     try:
-        rest = studio.pose(READY, studio.rest)
-        studio.set_joints(rest)
-        arms = [studio.image(2)]
-        tips = [project(READY).round(3).tolist()]
-
-        def path_to(goal, frames, arch):
-            indexes = [0]
-            seed = rest
-            for i in range(1, frames + 1):
-                u = i / frames
-                # Ease into each contact and approach from just above the payload.
-                t = u * u * (3 - 2 * u)
-                point = (1 - t) * READY + t * goal + arch * sin(pi * t)
-                seed = studio.pose(point, seed)
-                studio.set_joints(seed)
-                indexes.append(len(arms))
-                arms.append(studio.image(2))
-                tip = project(studio.data.site_xpos[studio.site])
-                if np.linalg.norm(tip - project(point)) > 0.18:
-                    raise ValueError("tool center misses its baked trajectory")
-                tips.append(tip.round(3).tolist())
-            return indexes
-
-        cells = [
-            path_to(row_target(i), 18, np.array([-0.012, 0.035, 0.04]))
-            for i in range(7)
-        ]
-        slots = [
-            path_to(RACK + [0, 0, i * LAYER], 10, np.array([0.014, 0.025, 0.025]))
-            for i in range(CAPACITY)
-        ]
-        carts = []
-        for i in range(WHEEL_FRAMES):
-            studio.set_joints(rest, wheel=2 * pi * i / WHEEL_FRAMES)
-            carts.append(studio.image(1))
-        hands = []
-        for width in (0.04, 0.034, 0.027):
-            studio.set_joints(rest, jaw=width)
-            hands.append(studio.image(4))
+        seed = studio.rest
+        arms = []
+        tips = []
+        # A single studio gesture supplies eleven illustrated wrist heights.
+        for i in range(11):
+            u = i / 10
+            t = u * u * (3 - 2 * u)
+            point = (
+                (1 - t) * READY
+                + t * LOW
+                + np.array([0.014, 0.025, 0.025]) * sin(pi * t)
+            )
+            seed = studio.pose(point, seed)
+            studio.set_joints(seed)
+            tip = project(studio.data.site_xpos[studio.site])
+            if np.linalg.norm(tip - project(point)) > 0.18:
+                raise ValueError("Wrist projection misses its illustration anchor")
+            tips.append(tip.round(3).tolist())
+            arms.append(studio.image(2))
+            if i == 0:
+                hand = studio.image(4)
+                finger = studio.image(5)
+                plinth = studio.image(1)
         artwork = symbols(arms, ORIGIN, DENSITY, "a")
-        artwork.update(symbols(carts, ORIGIN, DENSITY, "c"))
-        artwork.update(symbols(hands, ORIGIN + project(READY), DENSITY, "h"))
+        artwork.update(symbols([hand], ORIGIN + tips[0], DENSITY, "h"))
+        artwork.update(symbols([finger], ORIGIN + tips[0], DENSITY, "finger"))
+        artwork.update(symbols([plinth], ORIGIN, DENSITY, "plinth"))
         encoded = json.dumps(artwork, separators=(",", ":")).encode()
         (output / "geometry.json.gz").write_bytes(gzip.compress(encoded, mtime=0))
-        metadata = {
-            "wheel_frames": len(carts),
-            "tip": tips,
-            "cells": cells,
-            "slots": slots,
-            "geometry": {
-                "road_y": ROAD_Y,
-                "top": TOP,
-                "pitch": PITCH,
-                "size": SQUARE,
-                "pick_x": PICK_X,
-            },
-        }
         (output / "poses.json").write_text(
-            json.dumps(metadata, separators=(",", ":")) + "\n"
+            json.dumps({"tip": tips}, separators=(",", ":")) + "\n"
         )
         print(
-            f"Baked {len(arms)} Panda poses, {len(hands)} gripper states and {len(carts)} wheel phases."
+            f"Baked {len(arms)} arm poses, a closed gripper and one stationary plinth."
         )
     finally:
         studio.close()
@@ -109,7 +64,7 @@ if __name__ == "__main__":
         "output",
         type=Path,
         nargs="?",
-        default=Path(__file__).resolve().parents[1] / "assets" / "rover",
+        default=Path(__file__).resolve().parents[1] / "assets" / "panda",
     )
     args = parser.parse_args()
     bake(args.model, args.output)

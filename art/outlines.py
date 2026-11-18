@@ -21,13 +21,13 @@ def contours(mask):
     return "".join(commands)
 
 
-def paint(image, enamel=False):
+def paint(image, separate_warm=False):
     rgba = np.asarray(image)
     rgb = rgba[:, :, :3].astype("float32")
     opaque = rgba[:, :, 3] >= 128
     luminance = rgb @ np.array([0.26, 0.56, 0.18], dtype="float32")
     warm = (rgb[:, :, 0] - rgb[:, :, 2] > 21) & (rgb[:, :, 0] > rgb[:, :, 1])
-    families = [opaque & ~warm, opaque & warm] if enamel else [opaque]
+    families = [opaque & ~warm, opaque & warm] if separate_warm else [opaque]
     layers = []
     for family in families:
         if not np.any(family):
@@ -54,7 +54,9 @@ def symbols(frames, anchor, density, prefix):
     transform = f"translate({left/density-anchor[0]:.3f} {top/density-anchor[1]:.3f}) scale({1/density})"
     result = {}
     for i, image in enumerate(frames):
-        layer = paint(image.crop((left, top, right, bottom)), enamel=prefix == "c")
+        layer = paint(
+            image.crop((left, top, right, bottom)), separate_warm=prefix == "plinth"
+        )
         key = f"{prefix}{i}"
         result[key] = f'<g id="{key}" transform="{transform}">{layer}</g>'
     return result

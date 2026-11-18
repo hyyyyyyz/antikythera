@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 from tempfile import NamedTemporaryFile
 
+from artwork import read_plate
 from board import render
 from calendar_data import daily_commits
 
@@ -15,22 +16,34 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--username", required=True)
     parser.add_argument("--output", type=Path, default=Path("assembly-log.svg"))
-    parser.add_argument("--compact-output", type=Path, help="Optional second path for the same single-strip SVG")
+    parser.add_argument(
+        "--compact-output",
+        type=Path,
+        help="Optional second path for the same single-strip SVG",
+    )
+    parser.add_argument(
+        "--artwork", type=Path, help="A flat SVG illustration to put in the gripper"
+    )
     args = parser.parse_args()
     if args.compact_output and args.output.resolve() == args.compact_output.resolve():
         parser.error("the regular and compact outputs need different file paths")
+    plate = read_plate(args.artwork) if args.artwork else None
     end = datetime.now(timezone.utc).date()
     counts = daily_commits(args.username, end - timedelta(days=364), end)
-    drawing = render(args.username, end, counts)
+    drawing = render(args.username, end, counts, plate)
     outputs = [args.output]
     if args.compact_output:
         outputs.append(args.compact_output)
     for output in outputs:
         output.parent.mkdir(parents=True, exist_ok=True)
-        with NamedTemporaryFile(mode="w", encoding="utf-8", dir=output.parent, delete=False) as temp:
+        with NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=output.parent, delete=False
+        ) as temp:
             temp.write(drawing)
         os.replace(temp.name, output)
-    print(f"Wrote {args.output} with {sum(counts.values()):,} public commit contributions.")
+    print(
+        f"Wrote {args.output} with {sum(counts.values()):,} public commit contributions."
+    )
 
 
 if __name__ == "__main__":
