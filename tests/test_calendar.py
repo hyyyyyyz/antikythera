@@ -2,7 +2,7 @@ from datetime import date, timedelta
 import unittest
 from xml.etree import ElementTree as ET
 
-from assembly import level, render
+from board import BANDS, level, render
 from calendar_data import daily_commits
 
 SVG = {"s": "http://www.w3.org/2000/svg"}
@@ -65,7 +65,23 @@ class Drawing(unittest.TestCase):
             self.assertNotEqual(animation.get("repeatCount"), "indefinite")
 
     def test_chip_thresholds(self):
-        self.assertEqual([level(n) for n in (0, 1, 2, 3, 5, 6, 9, 10, 80)], [0, 1, 1, 2, 2, 3, 3, 4, 4])
+        for i, (threshold, _, _) in enumerate(BANDS):
+            self.assertEqual(level(threshold), i)
+            if i:
+                self.assertEqual(level(threshold - 1), i - 1)
+        self.assertEqual(level(1000), 9)
+
+    def test_mobile_calendar_matches_desktop_at_extreme_rail_positions(self):
+        for offset in (0, 1, 3, 177, 180, 184, 360, 364):
+            day = END - timedelta(days=offset)
+            counts = {day: 84}
+            boards = [ET.fromstring(render("demo", END, counts, compact=mode)) for mode in (False, True)]
+            self.assertEqual([b.find("s:desc", SVG).text for b in boards], [boards[0].find("s:desc", SVG).text]*2)
+            for board in boards:
+                self.assertEqual(len(board.findall(".//s:g/s:title", SVG)),365)
+                labels = [node.text for node in board.findall(".//s:text", SVG)]
+                self.assertTrue(all(caption in labels for _, _, caption in BANDS))
+
 
 
 if __name__ == "__main__":

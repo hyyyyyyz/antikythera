@@ -16,6 +16,9 @@ inputs:
     description: SVG path relative to the caller's working directory.
     required: false
     default: assembly-log.svg
+  compact-output:
+    description: Optional destination for the portrait calendar SVG.
+    required: false
 runs:
   using: composite
   steps:
@@ -25,4 +28,8 @@ runs:
         GH_TOKEN: ${{ inputs.token }}
         CALENDAR_USER: ${{ inputs.username }}
         CALENDAR_OUTPUT: ${{ inputs.output }}
-      run: python3 "$GITHUB_ACTION_PATH/assembly.py" --username "${CALENDAR_USER:-$GITHUB_REPOSITORY_OWNER}" --output "$CALENDAR_OUTPUT"
+        COMPACT_OUTPUT: ${{ inputs.compact-output }}
+      run: |
+        args=(--username "${CALENDAR_USER:-$GITHUB_REPOSITORY_OWNER}" --output "$CALENDAR_OUTPUT")
+        if [[ -n "$COMPACT_OUTPUT" ]]; then args+=(--compact-output "$COMPACT_OUTPUT"); fi
+        python3 "$GITHUB_ACTION_PATH/assembly.py" "${args[@]}"
