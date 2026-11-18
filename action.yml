@@ -1,0 +1,28 @@
+name: Antikythera Commit Calendar
+description: Render a year of public commit contributions as a robotic assembly board.
+author: Jason Huang
+branding:
+  icon: cpu
+  color: purple
+inputs:
+  username:
+    description: GitHub login to render. Defaults to the repository owner.
+    required: false
+  token:
+    description: Token for reading GitHub GraphQL. Defaults to the workflow token.
+    required: false
+    default: ${{ github.token }}
+  output:
+    description: SVG path relative to the caller's working directory.
+    required: false
+    default: assembly-log.svg
+runs:
+  using: composite
+  steps:
+    - name: Render assembly log
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        CALENDAR_USER: ${{ inputs.username }}
+        CALENDAR_OUTPUT: ${{ inputs.output }}
+      run: python3 "$GITHUB_ACTION_PATH/assembly.py" --username "${CALENDAR_USER:-$GITHUB_REPOSITORY_OWNER}" --output "$CALENDAR_OUTPUT"

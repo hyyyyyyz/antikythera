@@ -1,0 +1,1143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="274" viewBox="0 0 960 274" role="img" aria-labelledby="title desc">
+<title id="title">Antikythera assembly log for hyyyyyyz</title>
+<desc id="desc">1,694 public commit contributions from 2025-11-19 through 2026-11-18. One socket per day. Brighter chips mark busier days.</desc>
+<style>.cycle{display:none}@media(prefers-reduced-motion:no-preference){.cycle{display:inline}.parked{display:none}}</style>
+<rect x=".5" y=".5" width="959" height="273" rx="12" fill="#191925" stroke="#4a4053"/>
+<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace">
+<path d="M24 21h27v26H24z" fill="#514457"/><path d="M30 27h15v14H30z" fill="none" stroke="#f4bb87" stroke-width="2"/>
+<path d="M27 18v4m7-4v4m7-4v4m7-4v4M27 46v4m7-4v4m7-4v4m7-4v4" stroke="#be9b85" stroke-width="2"/>
+<text x="66" y="41" font-size="25" fill="#f8e7cb" font-weight="700">Antikythera</text>
+<text x="243" y="39" font-size="11" fill="#b2a4b7" letter-spacing="2">ASSEMBLY LOG</text>
+<text x="932" y="31" font-size="19" fill="#ffd69b" text-anchor="end" font-weight="700">1,694 commits</text>
+<text x="932" y="49" font-size="11" fill="#bcb2c6" text-anchor="end">Nov 19, 2025 – Nov 18, 2026</text>
+<path d="M24 62H936" stroke="#484151"/>
+<rect x="52" y="91" width="761" height="112" rx="4" fill="#1e1d2c" stroke="#41384c"/>
+<text x="45" y="124" font-size="10" fill="#c8bed2" text-anchor="end">Mon</text>
+<text x="45" y="152" font-size="10" fill="#c8bed2" text-anchor="end">Wed</text>
+<text x="45" y="180" font-size="10" fill="#c8bed2" text-anchor="end">Fri</text>
+<g><title>2025-11-19 · 1 commits</title><rect x="64" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="64" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M66 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-20 · 1 commits</title><rect x="64" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="64" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M66 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-21 · 1 commits</title><rect x="64" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="64" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M66 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-22 · 1 commits</title><rect x="64" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="64" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M66 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-23 · 1 commits</title><rect x="78" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M80 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-24 · 1 commits</title><rect x="78" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M80 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-25 · 1 commits</title><rect x="78" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M80 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-26 · 3 commits</title><rect x="78" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="143" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M80 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-27 · 7 commits</title><rect x="78" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M80 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-28 · 1 commits</title><rect x="78" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M80 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-29 · 3 commits</title><rect x="78" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="78" y="185" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M80 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-11-30 · 3 commits</title><rect x="92" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="101" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M94 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="92" y="83" font-size="11" fill="#c8c3cf" >Dec</text>
+<g><title>2025-12-01 · 1 commits</title><rect x="92" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M94 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-02 · 1 commits</title><rect x="92" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M94 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-03 · 1 commits</title><rect x="92" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M94 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-04 · 1 commits</title><rect x="92" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M94 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-05 · 1 commits</title><rect x="92" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M94 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-06 · 1 commits</title><rect x="92" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="92" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M94 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-07 · 1 commits</title><rect x="106" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-08 · 1 commits</title><rect x="106" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-09 · 1 commits</title><rect x="106" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-10 · 1 commits</title><rect x="106" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-11 · 1 commits</title><rect x="106" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-12 · 1 commits</title><rect x="106" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-13 · 1 commits</title><rect x="106" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="106" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M108 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-14 · 1 commits</title><rect x="120" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-15 · 1 commits</title><rect x="120" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-16 · 1 commits</title><rect x="120" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-17 · 1 commits</title><rect x="120" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-18 · 1 commits</title><rect x="120" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-19 · 1 commits</title><rect x="120" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-20 · 1 commits</title><rect x="120" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="120" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M122 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-21 · 1 commits</title><rect x="134" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M136 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-22 · 3 commits</title><rect x="134" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="115" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M136 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-23 · 1 commits</title><rect x="134" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M136 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-24 · 1 commits</title><rect x="134" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M136 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-25 · 1 commits</title><rect x="134" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M136 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-26 · 9 commits</title><rect x="134" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="171" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M136 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-27 · 1 commits</title><rect x="134" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="134" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M136 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-28 · 1 commits</title><rect x="148" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-29 · 1 commits</title><rect x="148" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-30 · 1 commits</title><rect x="148" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2025-12-31 · 1 commits</title><rect x="148" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="148" y="83" font-size="11" fill="#c8c3cf" >Jan</text>
+<g><title>2026-01-01 · 1 commits</title><rect x="148" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-02 · 1 commits</title><rect x="148" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-03 · 1 commits</title><rect x="148" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="148" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M150 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-04 · 1 commits</title><rect x="162" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-05 · 1 commits</title><rect x="162" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-06 · 1 commits</title><rect x="162" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-07 · 1 commits</title><rect x="162" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-08 · 2 commits</title><rect x="162" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-09 · 1 commits</title><rect x="162" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-10 · 1 commits</title><rect x="162" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="162" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M164 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-11 · 1 commits</title><rect x="176" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M178 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-12 · 3 commits</title><rect x="176" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="115" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M178 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-13 · 1 commits</title><rect x="176" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M178 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-14 · 1 commits</title><rect x="176" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M178 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-15 · 3 commits</title><rect x="176" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="157" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M178 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-16 · 1 commits</title><rect x="176" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M178 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-17 · 1 commits</title><rect x="176" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="176" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M178 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-18 · 1 commits</title><rect x="190" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-19 · 1 commits</title><rect x="190" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-20 · 1 commits</title><rect x="190" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-21 · 1 commits</title><rect x="190" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-22 · 1 commits</title><rect x="190" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-23 · 1 commits</title><rect x="190" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-24 · 1 commits</title><rect x="190" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="190" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M192 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-25 · 1 commits</title><rect x="204" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-26 · 1 commits</title><rect x="204" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-27 · 2 commits</title><rect x="204" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-28 · 1 commits</title><rect x="204" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-29 · 2 commits</title><rect x="204" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-30 · 1 commits</title><rect x="204" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-01-31 · 1 commits</title><rect x="204" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="204" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M206 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="218" y="83" font-size="11" fill="#c8c3cf" >Feb</text>
+<g><title>2026-02-01 · 1 commits</title><rect x="218" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M220 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-02 · 6 commits</title><rect x="218" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="115" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M220 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-03 · 7 commits</title><rect x="218" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="129" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M220 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-04 · 2 commits</title><rect x="218" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M220 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-05 · 8 commits</title><rect x="218" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M220 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-06 · 5 commits</title><rect x="218" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M220 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-07 · 5 commits</title><rect x="218" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="218" y="185" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M220 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-08 · 1 commits</title><rect x="232" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M234 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-09 · 2 commits</title><rect x="232" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M234 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-10 · 1 commits</title><rect x="232" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M234 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-11 · 13 commits</title><rect x="232" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="143" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M234 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-12 · 7 commits</title><rect x="232" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M234 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-13 · 2 commits</title><rect x="232" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M234 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-14 · 1 commits</title><rect x="232" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="232" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M234 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-15 · 1 commits</title><rect x="246" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M248 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-16 · 1 commits</title><rect x="246" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M248 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-17 · 1 commits</title><rect x="246" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M248 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-18 · 3 commits</title><rect x="246" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="143" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M248 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-19 · 2 commits</title><rect x="246" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M248 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-20 · 1 commits</title><rect x="246" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M248 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-21 · 1 commits</title><rect x="246" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="246" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M248 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-22 · 1 commits</title><rect x="260" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M262 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-23 · 1 commits</title><rect x="260" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M262 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-24 · 13 commits</title><rect x="260" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="129" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M262 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-25 · 1 commits</title><rect x="260" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M262 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-26 · 3 commits</title><rect x="260" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="157" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M262 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-27 · 4 commits</title><rect x="260" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M262 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-02-28 · 1 commits</title><rect x="260" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="260" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M262 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="274" y="83" font-size="11" fill="#c8c3cf" >Mar</text>
+<g><title>2026-03-01 · 1 commits</title><rect x="274" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-02 · 1 commits</title><rect x="274" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-03 · 1 commits</title><rect x="274" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-04 · 1 commits</title><rect x="274" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-05 · 1 commits</title><rect x="274" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-06 · 1 commits</title><rect x="274" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-07 · 1 commits</title><rect x="274" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="274" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M276 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-08 · 2 commits</title><rect x="288" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M290 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-09 · 1 commits</title><rect x="288" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M290 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-10 · 1 commits</title><rect x="288" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M290 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-11 · 1 commits</title><rect x="288" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M290 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-12 · 5 commits</title><rect x="288" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="157" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M290 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-13 · 3 commits</title><rect x="288" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M290 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-14 · 14 commits</title><rect x="288" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="288" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M290 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-15 · 1 commits</title><rect x="302" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M304 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-16 · 1 commits</title><rect x="302" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M304 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-17 · 7 commits</title><rect x="302" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="129" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M304 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-18 · 1 commits</title><rect x="302" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M304 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-19 · 2 commits</title><rect x="302" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M304 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-20 · 1 commits</title><rect x="302" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M304 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-21 · 1 commits</title><rect x="302" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="302" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M304 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-22 · 1 commits</title><rect x="316" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-23 · 1 commits</title><rect x="316" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-24 · 1 commits</title><rect x="316" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-25 · 1 commits</title><rect x="316" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-26 · 1 commits</title><rect x="316" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-27 · 2 commits</title><rect x="316" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-28 · 1 commits</title><rect x="316" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="316" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M318 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-29 · 2 commits</title><rect x="330" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-30 · 1 commits</title><rect x="330" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-03-31 · 1 commits</title><rect x="330" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="330" y="83" font-size="11" fill="#c8c3cf" >Apr</text>
+<g><title>2026-04-01 · 1 commits</title><rect x="330" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-02 · 1 commits</title><rect x="330" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-03 · 1 commits</title><rect x="330" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-04 · 1 commits</title><rect x="330" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="330" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M332 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-05 · 2 commits</title><rect x="344" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M346 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-06 · 2 commits</title><rect x="344" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M346 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-07 · 1 commits</title><rect x="344" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M346 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-08 · 1 commits</title><rect x="344" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M346 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-09 · 6 commits</title><rect x="344" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M346 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-10 · 2 commits</title><rect x="344" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M346 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-11 · 1 commits</title><rect x="344" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="344" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M346 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-12 · 1 commits</title><rect x="358" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-13 · 1 commits</title><rect x="358" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-14 · 1 commits</title><rect x="358" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-15 · 1 commits</title><rect x="358" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-16 · 2 commits</title><rect x="358" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-17 · 1 commits</title><rect x="358" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-18 · 1 commits</title><rect x="358" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="358" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M360 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-19 · 1 commits</title><rect x="372" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M374 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-20 · 2 commits</title><rect x="372" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M374 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-21 · 4 commits</title><rect x="372" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="129" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M374 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-22 · 1 commits</title><rect x="372" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M374 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-23 · 1 commits</title><rect x="372" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M374 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-24 · 1 commits</title><rect x="372" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M374 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-25 · 1 commits</title><rect x="372" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="372" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M374 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-26 · 3 commits</title><rect x="386" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="101" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M388 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-27 · 1 commits</title><rect x="386" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M388 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-28 · 1 commits</title><rect x="386" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M388 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-29 · 1 commits</title><rect x="386" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M388 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-04-30 · 1 commits</title><rect x="386" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M388 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="386" y="83" font-size="11" fill="#c8c3cf" >May</text>
+<g><title>2026-05-01 · 1 commits</title><rect x="386" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M388 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-02 · 1 commits</title><rect x="386" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="386" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M388 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-03 · 1 commits</title><rect x="400" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M402 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-04 · 31 commits</title><rect x="400" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="115" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M402 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-05 · 1 commits</title><rect x="400" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M402 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-06 · 12 commits</title><rect x="400" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="143" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M402 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-07 · 9 commits</title><rect x="400" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M402 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-08 · 2 commits</title><rect x="400" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M402 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-09 · 1 commits</title><rect x="400" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="400" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M402 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-10 · 1 commits</title><rect x="414" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-11 · 1 commits</title><rect x="414" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-12 · 1 commits</title><rect x="414" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-13 · 1 commits</title><rect x="414" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-14 · 1 commits</title><rect x="414" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-15 · 1 commits</title><rect x="414" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-16 · 1 commits</title><rect x="414" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="414" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M416 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-17 · 1 commits</title><rect x="428" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-18 · 1 commits</title><rect x="428" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-19 · 1 commits</title><rect x="428" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-20 · 1 commits</title><rect x="428" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-21 · 1 commits</title><rect x="428" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-22 · 1 commits</title><rect x="428" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-23 · 1 commits</title><rect x="428" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="428" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M430 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-24 · 1 commits</title><rect x="442" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M444 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-25 · 1 commits</title><rect x="442" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M444 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-26 · 1 commits</title><rect x="442" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M444 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-27 · 17 commits</title><rect x="442" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="143" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M444 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-28 · 8 commits</title><rect x="442" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M444 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-29 · 3 commits</title><rect x="442" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M444 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-30 · 2 commits</title><rect x="442" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="442" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M444 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-05-31 · 3 commits</title><rect x="456" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="101" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M458 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="456" y="83" font-size="11" fill="#c8c3cf" >Jun</text>
+<g><title>2026-06-01 · 2 commits</title><rect x="456" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M458 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-02 · 5 commits</title><rect x="456" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="129" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M458 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-03 · 2 commits</title><rect x="456" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M458 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-04 · 2 commits</title><rect x="456" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M458 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-05 · 3 commits</title><rect x="456" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M458 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-06 · 2 commits</title><rect x="456" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="456" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M458 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-07 · 1 commits</title><rect x="470" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M472 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-08 · 1 commits</title><rect x="470" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M472 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-09 · 3 commits</title><rect x="470" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="129" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M472 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-10 · 2 commits</title><rect x="470" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M472 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-11 · 2 commits</title><rect x="470" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M472 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-12 · 2 commits</title><rect x="470" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M472 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-13 · 1 commits</title><rect x="470" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="470" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M472 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-14 · 1 commits</title><rect x="484" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M486 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-15 · 1 commits</title><rect x="484" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M486 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-16 · 15 commits</title><rect x="484" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="129" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M486 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-17 · 6 commits</title><rect x="484" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="143" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M486 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-18 · 5 commits</title><rect x="484" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="157" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M486 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-19 · 9 commits</title><rect x="484" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="171" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M486 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-20 · 20 commits</title><rect x="484" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="484" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M486 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-21 · 1 commits</title><rect x="498" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M500 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-22 · 1 commits</title><rect x="498" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M500 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-23 · 2 commits</title><rect x="498" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M500 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-24 · 1 commits</title><rect x="498" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M500 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-25 · 3 commits</title><rect x="498" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="157" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M500 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-26 · 5 commits</title><rect x="498" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M500 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-27 · 7 commits</title><rect x="498" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="498" y="185" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M500 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-28 · 1 commits</title><rect x="512" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-29 · 1 commits</title><rect x="512" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-06-30 · 1 commits</title><rect x="512" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="512" y="83" font-size="11" fill="#c8c3cf" >Jul</text>
+<g><title>2026-07-01 · 1 commits</title><rect x="512" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-02 · 1 commits</title><rect x="512" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-03 · 1 commits</title><rect x="512" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-04 · 1 commits</title><rect x="512" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="512" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M514 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-05 · 1 commits</title><rect x="526" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-06 · 1 commits</title><rect x="526" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-07 · 1 commits</title><rect x="526" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-08 · 1 commits</title><rect x="526" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-09 · 1 commits</title><rect x="526" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-10 · 1 commits</title><rect x="526" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-11 · 1 commits</title><rect x="526" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="526" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M528 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-12 · 2 commits</title><rect x="540" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M542 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-13 · 3 commits</title><rect x="540" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="115" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M542 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-14 · 7 commits</title><rect x="540" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="129" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M542 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-15 · 1 commits</title><rect x="540" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M542 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-16 · 1 commits</title><rect x="540" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M542 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-17 · 1 commits</title><rect x="540" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M542 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-18 · 3 commits</title><rect x="540" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="540" y="185" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M542 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-19 · 1 commits</title><rect x="554" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M556 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-20 · 1 commits</title><rect x="554" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M556 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-21 · 1 commits</title><rect x="554" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M556 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-22 · 1 commits</title><rect x="554" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M556 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-23 · 8 commits</title><rect x="554" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M556 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-24 · 4 commits</title><rect x="554" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M556 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-25 · 24 commits</title><rect x="554" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="554" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M556 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-26 · 15 commits</title><rect x="568" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="101" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M570 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-27 · 19 commits</title><rect x="568" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="115" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M570 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-28 · 21 commits</title><rect x="568" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="129" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M570 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-29 · 12 commits</title><rect x="568" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="143" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M570 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-30 · 1 commits</title><rect x="568" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M570 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-07-31 · 1 commits</title><rect x="568" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M570 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="568" y="83" font-size="11" fill="#c8c3cf" >Aug</text>
+<g><title>2026-08-01 · 21 commits</title><rect x="568" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="568" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M570 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-02 · 21 commits</title><rect x="582" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="101" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M584 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-03 · 13 commits</title><rect x="582" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="115" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M584 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-04 · 21 commits</title><rect x="582" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="129" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M584 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-05 · 1 commits</title><rect x="582" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M584 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-06 · 1 commits</title><rect x="582" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M584 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-07 · 1 commits</title><rect x="582" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M584 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-08 · 3 commits</title><rect x="582" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="582" y="185" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M584 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-09 · 6 commits</title><rect x="596" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="101" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M598 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-10 · 4 commits</title><rect x="596" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="115" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M598 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-11 · 5 commits</title><rect x="596" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="129" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M598 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-12 · 11 commits</title><rect x="596" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="143" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M598 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-13 · 8 commits</title><rect x="596" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M598 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-14 · 8 commits</title><rect x="596" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="171" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M598 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-15 · 14 commits</title><rect x="596" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="596" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M598 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-16 · 18 commits</title><rect x="610" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="101" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M612 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-17 · 7 commits</title><rect x="610" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="115" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M612 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-18 · 1 commits</title><rect x="610" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M612 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-19 · 1 commits</title><rect x="610" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M612 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-20 · 1 commits</title><rect x="610" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M612 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-21 · 1 commits</title><rect x="610" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M612 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-22 · 1 commits</title><rect x="610" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="610" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M612 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-23 · 1 commits</title><rect x="624" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="624" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M626 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-24 · 3 commits</title><rect x="624" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="624" y="115" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M626 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-25 · 74 commits</title><rect x="624" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="624" y="129" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M626 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-26 · 7 commits</title><rect x="624" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="624" y="143" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M626 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-27 · 0 commits</title><rect x="624" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+</g>
+<g><title>2026-08-28 · 4 commits</title><rect x="624" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="624" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M626 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-29 · 84 commits</title><rect x="624" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="624" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M626 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-30 · 95 commits</title><rect x="638" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="101" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M640 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-08-31 · 8 commits</title><rect x="638" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="115" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M640 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="638" y="83" font-size="11" fill="#c8c3cf" >Sep</text>
+<g><title>2026-09-01 · 1 commits</title><rect x="638" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M640 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-02 · 3 commits</title><rect x="638" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="143" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M640 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-03 · 27 commits</title><rect x="638" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="157" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M640 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-04 · 55 commits</title><rect x="638" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="171" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M640 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-05 · 2 commits</title><rect x="638" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="638" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M640 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-06 · 11 commits</title><rect x="652" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="101" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M654 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-07 · 21 commits</title><rect x="652" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="115" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M654 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-08 · 4 commits</title><rect x="652" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="129" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M654 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-09 · 1 commits</title><rect x="652" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M654 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-10 · 1 commits</title><rect x="652" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M654 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-11 · 1 commits</title><rect x="652" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M654 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-12 · 1 commits</title><rect x="652" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="652" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M654 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-13 · 1 commits</title><rect x="666" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-14 · 1 commits</title><rect x="666" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-15 · 1 commits</title><rect x="666" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-16 · 1 commits</title><rect x="666" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-17 · 1 commits</title><rect x="666" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-18 · 1 commits</title><rect x="666" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-19 · 1 commits</title><rect x="666" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="666" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M668 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-20 · 1 commits</title><rect x="680" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-21 · 1 commits</title><rect x="680" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-22 · 1 commits</title><rect x="680" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-23 · 1 commits</title><rect x="680" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-24 · 1 commits</title><rect x="680" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-25 · 1 commits</title><rect x="680" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-26 · 1 commits</title><rect x="680" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="680" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M682 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-27 · 1 commits</title><rect x="694" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-28 · 1 commits</title><rect x="694" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-29 · 1 commits</title><rect x="694" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-09-30 · 1 commits</title><rect x="694" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="694" y="83" font-size="11" fill="#c8c3cf" >Oct</text>
+<g><title>2026-10-01 · 1 commits</title><rect x="694" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-02 · 1 commits</title><rect x="694" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-03 · 1 commits</title><rect x="694" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="694" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M696 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-04 · 1 commits</title><rect x="708" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-05 · 1 commits</title><rect x="708" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-06 · 1 commits</title><rect x="708" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-07 · 1 commits</title><rect x="708" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-08 · 1 commits</title><rect x="708" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-09 · 1 commits</title><rect x="708" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-10 · 1 commits</title><rect x="708" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="708" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M710 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-11 · 1 commits</title><rect x="722" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M724 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-12 · 1 commits</title><rect x="722" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M724 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-13 · 1 commits</title><rect x="722" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M724 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-14 · 2 commits</title><rect x="722" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M724 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-15 · 6 commits</title><rect x="722" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="157" width="10" height="10" rx="1.6" fill="#de997e"/><path d="M724 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-16 · 4 commits</title><rect x="722" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="171" width="10" height="10" rx="1.6" fill="#ac83a4"/><path d="M724 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-17 · 1 commits</title><rect x="722" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="722" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M724 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-18 · 1 commits</title><rect x="736" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-19 · 1 commits</title><rect x="736" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-20 · 1 commits</title><rect x="736" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-21 · 1 commits</title><rect x="736" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-22 · 1 commits</title><rect x="736" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-23 · 1 commits</title><rect x="736" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-24 · 1 commits</title><rect x="736" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="736" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M738 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-25 · 1 commits</title><rect x="750" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-26 · 1 commits</title><rect x="750" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="115" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-27 · 1 commits</title><rect x="750" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-28 · 1 commits</title><rect x="750" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-29 · 1 commits</title><rect x="750" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-30 · 1 commits</title><rect x="750" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-10-31 · 1 commits</title><rect x="750" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="750" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M752 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<text x="764" y="83" font-size="11" fill="#c8c3cf" >Nov</text>
+<g><title>2026-11-01 · 1 commits</title><rect x="764" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="764" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M766 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-02 · 0 commits</title><rect x="764" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+</g>
+<g><title>2026-11-03 · 2 commits</title><rect x="764" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="764" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M766 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-04 · 1 commits</title><rect x="764" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="764" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M766 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-05 · 1 commits</title><rect x="764" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="764" y="157" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M766 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-06 · 1 commits</title><rect x="764" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="764" y="171" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M766 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-07 · 1 commits</title><rect x="764" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="764" y="185" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M766 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-08 · 1 commits</title><rect x="778" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="778" y="101" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M780 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-09 · 0 commits</title><rect x="778" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+</g>
+<g><title>2026-11-10 · 2 commits</title><rect x="778" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="778" y="129" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M780 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-11 · 31 commits</title><rect x="778" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="778" y="143" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M780 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-12 · 58 commits</title><rect x="778" y="157" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="778" y="157" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M780 160v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-13 · 108 commits</title><rect x="778" y="171" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="778" y="171" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M780 174v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-14 · 13 commits</title><rect x="778" y="185" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="778" y="185" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M780 188v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-15 · 13 commits</title><rect x="792" y="101" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="792" y="101" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M794 104v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-16 · 138 commits</title><rect x="792" y="115" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="792" y="115" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M794 118v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-17 · 34 commits</title><rect x="792" y="129" width="10" height="10" rx="1.6" fill="#302c40"/>
+<rect x="792" y="129" width="10" height="10" rx="1.6" fill="#ffd28e"/><path d="M794 132v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/>
+</g>
+<g><title>2026-11-18 · 1 commits</title><rect x="792" y="143" width="10" height="10" rx="1.6" fill="#302c40"/>
+<g class="parked"><rect x="792" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M794 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/></g><g class="cycle" opacity="1"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.63;1" calcMode="discrete" dur="4.4s" fill="freeze"/><rect x="792" y="143" width="10" height="10" rx="1.6" fill="#74618f"/><path d="M794 146v-1h4" fill="none" stroke="#fff3d3" opacity=".38"/></g>
+</g>
+<path d="M822 94v106" stroke="#51465b" stroke-dasharray="2 4"/>
+<text x="875" y="84" font-size="10" fill="#baaabd" text-anchor="middle" letter-spacing="2">FEEDER</text>
+<rect x="842" y="148" width="38" height="35" rx="3" fill="#242230" stroke="#726077"/>
+<path d="M848 175h25m-25-6h25m-25-6h25" stroke="#a78173" stroke-width="2"/>
+<rect x="850" y="151" width="10" height="10" rx="1" fill="#d9a37f"/>
+<path d="M57 212h860" stroke="#484354" stroke-width="5"/><path d="M57 211h860" stroke="#837789" stroke-width="1"/>
+<g class="parked"><g transform="translate(874.0 212)"><rect x="-15" y="-5" width="30" height="10" rx="3" fill="#b8a4b5" stroke="#342d40" stroke-width="2"/></g><path d="M874.0 212 L934.4 167.6" stroke="#312e41" stroke-width="10" stroke-linecap="round"></path><path d="M874.0 212 L934.4 167.6" stroke="#a696aa" stroke-width="6" stroke-linecap="round"></path><path d="M934.4 167.6 L880.0 116.0" stroke="#392f43" stroke-width="8" stroke-linecap="round"></path><path d="M934.4 167.6 L880.0 116.0" stroke="#efa873" stroke-width="4.5" stroke-linecap="round"></path><g transform="translate(874.0 212)"><circle r="6" fill="#6b6077" stroke="#e1c4a2" stroke-width="2"/></g><g transform="translate(934.4 167.6)"><circle r="5.5" fill="#50465d" stroke="#f2c194" stroke-width="2"/><circle r="1.6" fill="#f7e6cd"/></g><g transform="translate(880.0 116.0)"><path d="M-5 7V0L-2 -3H2L5 0V7" fill="none" stroke="#ede4d0" stroke-width="2"/><circle r="2.4" fill="#a598a8"/></g></g>
+<g class="cycle"><g transform="translate(874.0 212)"><animateTransform attributeName="transform" type="translate" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="874.0 212;874.0 212;874.0 212;874.0 212;817.0 212;817.0 212;817.0 212;817.0 212;817.0 212;874.0 212"/><rect x="-15" y="-5" width="30" height="10" rx="3" fill="#b8a4b5" stroke="#342d40" stroke-width="2"/></g><path d="M874.0 212 L934.4 167.6" stroke="#312e41" stroke-width="10" stroke-linecap="round"><animate attributeName="d" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="M874.0 212 L934.4 167.6;M874.0 212 L929.3 161.3;M874.0 212 L929.3 161.3;M874.0 212 L925.5 157.5;M817.0 212 L868.0 157.0;M817.0 212 L868.0 157.0;M817.0 212 L870.2 159.2;M817.0 212 L870.2 159.2;M817.0 212 L868.0 157.0;M874.0 212 L934.4 167.6"/></path><path d="M874.0 212 L934.4 167.6" stroke="#a696aa" stroke-width="6" stroke-linecap="round"><animate attributeName="d" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="M874.0 212 L934.4 167.6;M874.0 212 L929.3 161.3;M874.0 212 L929.3 161.3;M874.0 212 L925.5 157.5;M817.0 212 L868.0 157.0;M817.0 212 L868.0 157.0;M817.0 212 L870.2 159.2;M817.0 212 L870.2 159.2;M817.0 212 L868.0 157.0;M874.0 212 L934.4 167.6"/></path><path d="M934.4 167.6 L880.0 116.0" stroke="#392f43" stroke-width="8" stroke-linecap="round"><animate attributeName="d" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="M934.4 167.6 L880.0 116.0;M929.3 161.3 L855.0 151.0;M929.3 161.3 L855.0 151.0;M925.5 157.5 L855.0 132.0;M868.0 157.0 L797.0 133.0;M868.0 157.0 L797.0 133.0;M870.2 159.2 L797.0 143.0;M870.2 159.2 L797.0 143.0;M868.0 157.0 L797.0 133.0;M934.4 167.6 L880.0 116.0"/></path><path d="M934.4 167.6 L880.0 116.0" stroke="#efa873" stroke-width="4.5" stroke-linecap="round"><animate attributeName="d" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="M934.4 167.6 L880.0 116.0;M929.3 161.3 L855.0 151.0;M929.3 161.3 L855.0 151.0;M925.5 157.5 L855.0 132.0;M868.0 157.0 L797.0 133.0;M868.0 157.0 L797.0 133.0;M870.2 159.2 L797.0 143.0;M870.2 159.2 L797.0 143.0;M868.0 157.0 L797.0 133.0;M934.4 167.6 L880.0 116.0"/></path><g transform="translate(874.0 212)"><animateTransform attributeName="transform" type="translate" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="874.0 212;874.0 212;874.0 212;874.0 212;817.0 212;817.0 212;817.0 212;817.0 212;817.0 212;874.0 212"/><circle r="6" fill="#6b6077" stroke="#e1c4a2" stroke-width="2"/></g><g transform="translate(934.4 167.6)"><animateTransform attributeName="transform" type="translate" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="934.4 167.6;929.3 161.3;929.3 161.3;925.5 157.5;868.0 157.0;868.0 157.0;870.2 159.2;870.2 159.2;868.0 157.0;934.4 167.6"/><circle r="5.5" fill="#50465d" stroke="#f2c194" stroke-width="2"/><circle r="1.6" fill="#f7e6cd"/></g><g transform="translate(880.0 116.0)"><animateTransform attributeName="transform" type="translate" dur="4.4s" repeatCount="1" fill="freeze" keyTimes="0;0.15;0.22;0.30;0.50;0.56;0.63;0.70;0.77;1" values="880.0 116.0;855.0 151.0;855.0 151.0;855.0 132.0;797.0 133.0;797.0 133.0;797.0 143.0;797.0 143.0;797.0 133.0;880.0 116.0"/><rect x="-4" y="2" width="8" height="8" rx="1.4" fill="#ffd99f" opacity="0"><animate attributeName="opacity" dur="4.4s" values="0;1;0;0" keyTimes="0;0.22;0.63;1" calcMode="discrete" fill="freeze"/></rect><path d="M-5 7V0L-2 -3H2L5 0V7" fill="none" stroke="#ede4d0" stroke-width="2"/><circle r="2.4" fill="#a598a8"/></g></g>
+<path d="M24 230h912" stroke="#484151"/>
+<text x="26" y="255" font-size="13" fill="#ebddc7" >@hyyyyyyz</text>
+<text x="932" y="254" font-size="11" fill="#bcb2c6" text-anchor="end">commits / day</text>
+<rect x="476" y="244" width="10" height="10" rx="1.5" fill="#302c40"/>
+<text x="491" y="254" font-size="11" fill="#c8c3cf" >0</text>
+<rect x="545" y="244" width="10" height="10" rx="1.5" fill="#74618f"/>
+<text x="560" y="254" font-size="11" fill="#c8c3cf" >1–2</text>
+<rect x="614" y="244" width="10" height="10" rx="1.5" fill="#ac83a4"/>
+<text x="629" y="254" font-size="11" fill="#c8c3cf" >3–5</text>
+<rect x="683" y="244" width="10" height="10" rx="1.5" fill="#de997e"/>
+<text x="698" y="254" font-size="11" fill="#c8c3cf" >6–9</text>
+<rect x="752" y="244" width="10" height="10" rx="1.5" fill="#ffd28e"/>
+<text x="767" y="254" font-size="11" fill="#c8c3cf" >10+</text>
+</g></svg>
