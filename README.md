@@ -48,7 +48,7 @@ The step writes the SVG to the job's workspace. Publish that file on the branch 
 
 The board covers 365 days ending today in UTC. Weeks run left to right, with Sunday at the top. Each tile counts commits GitHub credits to that user in public repositories. [GitHub's contribution rules](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference)
 
-An empty socket means zero commits. Nine shades of blue mark **1, 2, 3, 4–5, 6–9, 10–19, 20–39, 40–79 and 80+**. The SVG adapts to light and dark themes. Visitors who prefer reduced motion see the full calendar and a parked shuttle. An empty year stays idle.
+At the start of a round, an empty socket means zero commits. Dates cleared during play light up again when the next round begins. Nine shades of blue mark **1, 2, 3, 4–5, 6–9, 10–19, 20–39, 40–79 and 80+**. The SVG adapts to light and dark themes. Visitors who prefer reduced motion see the full calendar and a parked shuttle. An empty year stays idle.
 
 ## Local development
 
