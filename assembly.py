@@ -1,4 +1,4 @@
-"""Generate an animated, self-contained SVG assembly calendar."""
+"""Generate the self-contained Panda shuttle commit calendar."""
 
 import argparse
 from datetime import datetime, timedelta, timezone

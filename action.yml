@@ -1,9 +1,9 @@
 name: Antikythera Commit Calendar
-description: Render a year of public commit contributions as a robotic assembly board.
+description: Render a wheeled Franka Panda shuttle that collects and returns public GitHub commit tiles.
 author: Jason Huang
 branding:
   icon: cpu
-  color: purple
+  color: yellow
 inputs:
   username:
     description: GitHub login to render. Defaults to the repository owner.

@@ -4,7 +4,7 @@ on:
     - cron: "19 3 * * *"
   push:
     branches: [main]
-    paths: ['*.py', 'action.yml', '.github/workflows/calendar.yml']
+    paths: ['*.py', 'assets/rover/**', 'action.yml', '.github/workflows/calendar.yml']
   workflow_dispatch:
 
 permissions:
@@ -33,6 +33,6 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Refresh the public commit calendar'
+          git commit -m 'Refresh the public commit calendar' -m 'Co-authored-by: Codex <noreply@openai.com>'
           git pull --rebase origin "$DEFAULT_BRANCH"
           git push origin "HEAD:$DEFAULT_BRANCH"

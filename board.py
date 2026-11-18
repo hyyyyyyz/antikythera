@@ -1,18 +1,29 @@
-"""One continuous, responsive strip of 53 weeks and a collaborative arm."""
+"""A single strip of public commit days above the Panda shuttle's service road."""
 
 from datetime import timedelta
 from html import escape
 
-from mechanism import ART, DROP, DURATION, PICK, SUPPLY, arm
+from mechanism import (
+    HEIGHT,
+    LEFT,
+    WIDTH,
+    Route,
+    Stop,
+    animate,
+    artwork,
+    rig,
+    route_stops,
+    trolley,
+)
 
-# Each threshold has a light-mode and a dark-mode ink.
+# Lower bound, light-mode ink, dark-mode ink.
 BANDS = (
-    (0,  "#edf0f3", "#212b36"),
-    (1,  "#c6d6e5", "#30455e"),
-    (2,  "#afc8dc", "#3e5774"),
-    (3,  "#96b6cf", "#4c6988"),
-    (4,  "#7ca3c2", "#5a7d9e"),
-    (6,  "#638faf", "#7192ae"),
+    (0, "#edf0f3", "#212b36"),
+    (1, "#c6d6e5", "#30455e"),
+    (2, "#afc8dc", "#3e5774"),
+    (3, "#96b6cf", "#4c6988"),
+    (4, "#7ca3c2", "#5a7d9e"),
+    (6, "#638faf", "#7192ae"),
     (10, "#4e799c", "#88a8bf"),
     (20, "#3c678a", "#9ebdd0"),
     (40, "#2b5576", "#b8d3e0"),
@@ -25,42 +36,75 @@ def level(count):
 
 
 def render(username, end, counts):
-    start = end-timedelta(days=364)
-    origin = start-timedelta(days=(start.weekday()+1)%7)
-    days = [start+timedelta(days=i) for i in range(365)]
-    total = sum(counts.get(d,0) for d in days)
-    latest = next((d for d in reversed(days) if counts.get(d,0)),None)
-    light = "".join(f".l{i}{{fill:{c}}}" for i,(_,c,_) in enumerate(BANDS))
-    dark = "".join(f".l{i}{{fill:{c}}}" for i,(_,_,c) in enumerate(BANDS))
+    model = rig()
+    geometry = model["geometry"]
+    start = end - timedelta(days=364)
+    origin = start - timedelta(days=(start.weekday() + 1) % 7)
+    size = geometry["size"]
+    cells = []
+    for n in range(365):
+        day = start + timedelta(days=n)
+        week, row = divmod((day - origin).days, 7)
+        count = counts.get(day, 0)
+        cells.append(
+            Stop(
+                day,
+                LEFT + week * geometry["pitch"] + size / 2,
+                row,
+                count,
+                level(count),
+            )
+        )
+    route = Route(route_stops([c for c in cells if c.count]), model)
+    active_stops = set(route.stops)
+    total = sum(c.count for c in cells)
+    description = (
+        "A wheeled Franka Panda shuttle collects date tiles and returns them to their original days."
+        if active_stops
+        else "The Franka Panda shuttle is parked below the empty calendar."
+    )
+    light = "".join(f".l{i}{{fill:{ink}}}" for i, (_, ink, _) in enumerate(BANDS))
+    dark = "".join(f".l{i}{{fill:{ink}}}" for i, (_, _, ink) in enumerate(BANDS))
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="978" height="164" viewBox="0 0 978 164" role="img" aria-labelledby="title desc">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="title desc">',
         f'<title id="title">Commit calendar for {escape(username)}</title>',
-        f'<desc id="desc">{total:,} public commit contributions from {start} through {end}. Each square is one day. The arm places the most recent active day.</desc>',
-        '<style>'+light+'@media(prefers-color-scheme:dark){'+dark+'}.cycle{display:none}'
-        '@media(prefers-reduced-motion:no-preference){.cycle{display:inline}.parked{display:none}}</style>',
-        '<defs>'+ART+'</defs>',
+        f'<desc id="desc">{total:,} public commit contributions from {start} through {end}. {description}</desc>',
+        "<metadata>Panda robot geometry from Franka Robotics via MuJoCo Menagerie, Apache-2.0. Studio renders, shuttle design and animation by Antikythera.</metadata>",
+        "<style>" + light + ".road{fill:#e7ecf1;stroke:#cbd4db}.mark{stroke:#b7c4ce}"
+        "@media(prefers-color-scheme:dark){"
+        + dark
+        + ".road{fill:#202b36;stroke:#384654}.mark{stroke:#526272}}"
+        ".moving{display:none}@media(prefers-reduced-motion:no-preference){.moving{display:inline}.still{display:none}}</style>",
+        '<defs><radialGradient id="tire-shadow"><stop stop-color="#091019" stop-opacity=".42"/><stop offset="1" stop-color="#091019" stop-opacity="0"/></radialGradient>',
+        '<g id="block"><path d="M-5-4l2-2h8v9l-2 2h-8z"/><path d="M-5-4l2-2h8L3-4z" fill="white" opacity=".36"/><path d="M3-4l2-2v9L3 5z" fill="#091729" opacity=".28"/></g>',
+        artwork(route.frames),
+        "</defs>",
+        '<path class="road" d="M17 179H962l9 19-9 6H15l-8-6z" stroke-width=".8" stroke-linejoin="round"/>',
+        '<path class="mark" d="M20 191.5h936" fill="none" stroke-width="1.35" stroke-linecap="round" stroke-dasharray="11 13"/>',
     ]
-    target=None
-    for day in days:
-        week,row=divmod((day-origin).days,7)
-        x,y=12+15*week,34+15*row
-        n=counts.get(day,0)
-        rect=f'<rect width="11.5" height="11.5" rx="2.6" class="l{level(n)}"/>'
-        parts.append(f'<g transform="translate({x} {y})"><title>{day} · {n} commits</title>')
-        if day==latest:
-            target=(x+5.75,y+5.75)
-            parts.extend(['<rect width="11.5" height="11.5" rx="2.6" class="l0"/>',
-                          f'<g class="parked">{rect}</g><g class="cycle">'
-                          f'<animate attributeName="opacity" dur="{DURATION}" values="0;1;1" keyTimes="0;{DROP};1" calcMode="discrete" fill="freeze"/>{rect}</g>'])
+    for c in cells:
+        x = c.x - size / 2
+        y = geometry["top"] + c.row * geometry["pitch"]
+        parts.append(
+            f'<g data-day="{c.day}" transform="translate({x:g} {y:g})"><title>{c.day} · {c.count} commits</title>'
+        )
+        rect = f'<rect width="{size}" height="{size}" rx="2.5" class="l{c.shade}"/>'
+        if c in active_stops:
+            show = animate(
+                route.frames, "opacity", lambda f: int(f.held != c and c not in f.cargo)
+            )
+            parts += [
+                f'<rect width="{size}" height="{size}" rx="2.5" class="l0"/>',
+                f'<g class="still">{rect}</g><g class="moving">{show}{rect}</g>',
+            ]
         else:
             parts.append(rect)
-        parts.append('</g>')
-    idle=arm()
-    if target:
-        color=f"l{level(counts[latest])}"
-        loose=(f'<rect x="{SUPPLY[0]-5}" y="{SUPPLY[1]-5}" width="10" height="10" rx="2" class="{color}" opacity="0">'
-               f'<animate attributeName="opacity" values="1;0;0" keyTimes="0;{PICK};1" calcMode="discrete" dur="{DURATION}" fill="freeze"/></rect>')
-        parts += [f'<g class="parked">{idle}</g>', f'<g class="cycle">{loose}{arm(target,color)}</g>']
+        parts.append("</g>")
+    if route.stops:
+        parts += [
+            f'<g class="still">{trolley(route,False)}</g>',
+            f'<g class="moving">{trolley(route,True)}</g>',
+        ]
     else:
-        parts.append(idle)
-    return "\n".join(parts+["</svg>"])
+        parts.append(trolley(route, False))
+    return "\n".join(parts + ["</svg>"])
