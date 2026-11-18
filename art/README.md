@@ -1,6 +1,6 @@
 # Baking the Panda shuttle
 
-The published Action needs Python's standard library and the GitHub CLI. The optional art pipeline uses MuJoCo to render the actual Panda meshes and the original shuttle under an orthographic studio camera. It bakes the arm, gripper and wheels into separate sets of poses. The pinch locations come directly from the same camera projection.
+The published Action needs Python's standard library and the GitHub CLI. The optional art pipeline uses MuJoCo to render the actual Panda meshes and the original shuttle under an orthographic studio camera. It bakes the arm, gripper and wheels into separate sets of poses. First Light selects wrist poses from this library and draws its arcade light head, pulses, antenna and pennant in SVG. The pinch locations come directly from the same camera projection.
 
 The runtime embeds the required rendered poses as native SVG paths. A standalone SVG can therefore play as a README image or in its own browser tab, with no external meshes, images, scripts, fonts or rendering service.
 
@@ -12,4 +12,4 @@ The runtime embeds the required rendered poses as native SVG paths. A standalone
 
 `studio.py` defines lighting, camera calibration, the pinch site and inverse kinematics. `chassis.py` defines the four-wheel shuttle and its cargo tray. `outlines.py` encodes the lit surfaces into SVG paint layers. `bake.py` writes those layers to `assets/rover/geometry.json.gz` and the projected motion paths to `assets/rover/poses.json`.
 
-The board and rover use the same display units. At a collection stop the chassis translates along the road until the projected pinch site coincides with a real day cell. In the tray, each occupied slot is the projected pinch point of the corresponding deposit pose. [Panda attribution and license](../third_party/panda/README.md)
+The board and rover use the same display units. The projected pinch site anchors the arcade prop. The animation can therefore attach it to the gripper as the wrist changes pose. [Panda attribution and license](../third_party/panda/README.md)

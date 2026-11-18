@@ -1,4 +1,4 @@
-"""Generate the self-contained Panda shuttle commit calendar."""
+"""Generate First Light, a self-contained animated commit calendar."""
 
 import argparse
 from datetime import datetime, timedelta, timezone

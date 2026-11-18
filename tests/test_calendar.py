@@ -49,7 +49,7 @@ class Drawing(unittest.TestCase):
         for delta in range(7):
             end = date(2024, 2, 29) + timedelta(days=delta)
             svg = ET.fromstring(render("demo", end, {}))
-            sockets = svg.findall(".//s:g/s:title", SVG)
+            sockets = svg.findall(".//s:g[@data-day]/s:title", SVG)
             self.assertEqual(len(sockets), 365)
             self.assertIn(str(end - timedelta(days=364)), sockets[0].text)
             self.assertIn(str(end), sockets[-1].text)
@@ -62,18 +62,27 @@ class Drawing(unittest.TestCase):
         svg = ET.fromstring(render("name&name", END, counts))
         self.assertIn("name&name", svg.find("s:title", SVG).text)
         self.assertIn("5 public commit", svg.find("s:desc", SVG).text)
-        selected = [
-            cell.get("data-day")
-            for cell in svg.findall("s:g[@data-day]", SVG)
-            if cell.find("s:g[@class='moving']", SVG) is not None
-        ]
-        self.assertEqual(selected, [str(last)])
-        cell = svg.find(f"s:g[@data-day='{last}']", SVG)
+        cell = svg.find(f".//s:g[@data-day='{last}']", SVG)
+        self.assertEqual(cell.get("class"), "l4")
+        selected = svg.findall(".//s:g[@data-target]", SVG)
+        self.assertEqual(len(selected), 1)
         self.assertEqual(
-            cell.find("s:g[@class='still']/s:rect", SVG).get("class"), "l4"
+            [u.get("href") for u in selected[0].findall("s:use", SVG)],
+            ["#" + cell.get("id")],
         )
-        visibility = cell.find("s:g[@class='moving']/s:animate", SVG)
-        self.assertEqual(visibility.get("values").split(";"), ["1", "0", "1", "1"])
+        visibility = selected[0].find("s:animate", SVG)
+        self.assertEqual(visibility.get("values").split(";"), ["1", "0", "0"])
+        for scene in ("moving", "still"):
+            shuttle = svg.find(f"s:g[@class='{scene}']/s:g[@data-part='shuttle']", SVG)
+            self.assertEqual(
+                [a.get("data-arm") for a in shuttle.findall("s:g[@data-arm]", SVG)],
+                ["panda"],
+            )
+        self.assertEqual(len(svg.findall(".//s:g[@data-part='transmission']", SVG)), 1)
+        self.assertEqual(len(svg.findall(".//s:g[@data-part='victory-flag']", SVG)), 1)
+        still = svg.find("s:g[@class='still']", SVG)
+        self.assertIsNone(still.find(".//s:g[@data-part='victory-flag']", SVG))
+        self.assertIsNone(still.find(".//s:path[@data-part='pulse']", SVG))
         self.assertIn("prefers-reduced-motion", svg.find("s:style", SVG).text)
         self.assertIsNotNone(
             svg.find("s:g[@class='still']/s:g[@data-part='shuttle']", SVG)
@@ -92,7 +101,6 @@ class Drawing(unittest.TestCase):
             self.assertEqual((times[0], times[-1]), (0, 1))
             self.assertTrue(all(t < u for t, u in zip(times, times[1:])))
             self.assertEqual(len(times), len(values))
-            self.assertEqual(values[0], values[-1])
             if a.get("attributeName") == "href":
                 self.assertTrue(all(v[0] == "#" and v[1:] in ids for v in values))
         for use in svg.findall(".//s:use", SVG):
@@ -111,7 +119,7 @@ class Drawing(unittest.TestCase):
             board = ET.fromstring(render("demo", END, counts))
             cells = [
                 g
-                for g in board.findall("s:g", SVG)
+                for g in board.findall(".//s:g[@data-day]", SVG)
                 if g.find("s:title", SVG) is not None
             ]
             positions = [g.get("transform").split("(")[1][:-1].split() for g in cells]

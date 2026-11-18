@@ -1,5 +1,5 @@
 name: Antikythera Commit Calendar
-description: Render a wheeled Franka Panda shuttle that collects and returns public GitHub commit tiles.
+description: Play First Light on your public commit calendar with a Franka Panda, a lunar relay and a victory flag.
 author: Jason Huang
 branding:
   icon: cpu

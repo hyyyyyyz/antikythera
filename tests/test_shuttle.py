@@ -1,96 +1,99 @@
-from collections import Counter
 from dataclasses import replace
 from datetime import date, timedelta
+from math import cos, hypot, radians, sin
 import unittest
 
-from mechanism import LEFT, Route, Stop, rig, route_stops
+from mechanism import BARREL, DOCK, LEFT, Route, Stop, calendar_seed, rig
+
+END = date(2026, 11, 18)
 
 
-class Shuttle(unittest.TestCase):
+class ArcadeMission(unittest.TestCase):
     def setUp(self):
         self.model = rig()
         self.geometry = self.model["geometry"]
 
-    def stop(self, week, row, count=8):
-        day = date(2025, 11, 16) + timedelta(days=week * 7 + row)
-        x = LEFT + week * self.geometry["pitch"] + self.geometry["size"] / 2
-        return Stop(day, x, row, count, 5)
+    def stop(self, week, row):
+        day = date(2025, 11, 16) + timedelta(days=7 * week + row)
+        return Stop(
+            day,
+            LEFT + week * self.geometry["pitch"] + self.geometry["size"] / 2,
+            row,
+            4,
+            4,
+        )
 
-    def test_selects_distinct_occupied_days_including_the_latest(self):
-        active = [self.stop(i, i % 7, count=53 - i) for i in range(53)]
-        selected = route_stops(active)
-        self.assertEqual(len(set(selected)), 6)
-        self.assertEqual(selected[0], active[-1])
-        self.assertEqual(selected[-1], active[0])
-        self.assertTrue(all(a.day > b.day for a, b in zip(selected, selected[1:])))
-        self.assertEqual(route_stops([]), [])
+    def mission(self, active, username="sample"):
+        return Route(active, self.model, calendar_seed(username, END, active))
 
-    def test_parked_when_empty(self):
-        frames = Route([], self.model).frames
-        self.assertEqual(len(frames), 1)
-        self.assertIsNone(frames[0].held)
-        self.assertEqual(frames[0].cargo, ())
+    def test_empty_mission_is_dormant(self):
+        r = self.mission([])
+        self.assertEqual((r.time, r.signal, r.hoist), (0, 0, 0))
+        self.assertFalse(r.shots)
+        self.assertEqual(len(r.frames), 1)
 
-    def test_all_transfers_match_the_projected_pinch_location(self):
+    def test_each_real_tile_goes_dark_once_before_the_antenna_and_flag(self):
+        active = [self.stop(i // 7, i % 7) for i in range(365)]
+        r = self.mission(active)
+        self.assertCountEqual([s.tile for s in r.shots], active)
+        self.assertTrue(
+            all(a.fired < a.hit < b.fired for a, b in zip(r.shots, r.shots[1:]))
+        )
+        self.assertLess(r.shots[-1].hit, r.deployment)
+        self.assertLess(r.deployment, r.signal)
+        self.assertLess(r.signal, r.hoist)
+        self.assertLess(r.hoist + 2000, r.time)
+        self.assertLess(r.time, 65_000)
+        self.assertEqual(r.frames[-1].x, DOCK)
+        self.assertLess(min(f.x for f in r.frames), 125)
+        self.assertTrue(all(a.ms < b.ms for a, b in zip(r.frames, r.frames[1:])))
+        self.assertGreater(len({f.pose for f in r.frames}), 5)
+
+    def test_schedule_is_reproducible_and_varies_between_calendars(self):
+        active = [self.stop(w, row) for w in range(0, 53, 3) for row in (0, 3, 6)]
+        days = lambda r: [s.tile.day for s in r.shots]
+        first = days(self.mission(active))
+        self.assertEqual(first, days(self.mission(active)))
+        self.assertNotEqual(first, days(self.mission(active, "another")))
+        self.assertNotEqual(first, sorted(first))
+        # Increasing today's count updates the color without reshuffling the level.
+        updated = [replace(s, count=s.count + 1) for s in active]
+        self.assertEqual(first, days(self.mission(updated)))
+
+    def test_screen_pulses_leave_the_illustrated_muzzle_and_end_on_their_tiles(self):
         cases = [
-            [self.stop(52, 0)],
-            [self.stop(0, 6)],
-            [self.stop(50 - i * 8, row) for i, row in enumerate((1, 5, 2, 4, 0, 3))],
-            [self.stop(20, row) for row in (6, 4, 3)],
+            [self.stop(51, 6)],
+            [self.stop(0, 0), self.stop(52, 6)],
+            [self.stop(w, row) for w in range(53) for row in (0, 3, 6)],
         ]
-        for stops in cases:
-            with self.subTest(stops=len(stops), first=stops[0].day):
-                frames = Route(stops, self.model).frames
-                self.assertEqual(replace(frames[-1], ms=0), frames[0])
-                self.assertTrue(
-                    any(a.x != b.x and b.cargo for a, b in zip(frames, frames[1:]))
+        for active in cases:
+            r = self.mission(active)
+            states = {f.ms: f for f in r.frames}
+            for s in r.shots:
+                f = states[s.fired]
+                tip = self.model["tip"][f.pose]
+                grip = (f.x + tip[0], self.geometry["road_y"] + tip[1])
+                theta = radians(f.angle)
+                direction = (cos(theta), sin(theta))
+                for axis in range(2):
+                    self.assertAlmostEqual(
+                        s.muzzle[axis],
+                        grip[axis] + BARREL * direction[axis],
+                        delta=0.001,
+                    )
+                dx = s.target[0] - s.muzzle[0]
+                dy = s.target[1] - s.muzzle[1]
+                self.assertGreater(hypot(dx, dy), 15.9)
+                self.assertAlmostEqual(
+                    dx * direction[1] - dy * direction[0], 0, delta=0.002
                 )
-                events = Counter()
-                for before, now in zip(frames, frames[1:]):
-                    self.assertGreater(now.ms, before.ms)
-                    self.assertNotIn(now.held, now.cargo)
-                    self.assertEqual(len(set(now.cargo)), len(now.cargo))
-                    self.assertLessEqual(len(now.cargo), len(self.model["slots"]))
-                    self.assertTrue(set(now.cargo).issubset(stops))
-                    self.assertTrue(0 <= now.wheel < self.model["wheel_frames"])
-                    if before.x == now.x:
-                        self.assertEqual(before.wheel, now.wheel)
-                    else:
-                        self.assertEqual((now.pose, now.jaw, now.held), (0, 0, None))
-                        self.assertEqual(before.cargo, now.cargo)
-
-                    if before.held == now.held:
-                        continue
-                    item = now.held or before.held
-                    self.assertIn(item, stops)
-                    self.assertEqual(now.jaw, 2)
-                    arriving = now.held is None
-                    cargo = now.cargo if arriving else before.cargo
-                    at_tray = item in cargo
-                    if at_tray:
-                        slot = cargo.index(item)
-                        tray_pose = self.model["slots"][slot][-1]
-                        expected = self.model["tip"][tray_pose]
-                        self.assertEqual(now.pose, tray_pose)
-                    else:
-                        center_y = (
-                            self.geometry["top"]
-                            + item.row * self.geometry["pitch"]
-                            + self.geometry["size"] / 2
-                        )
-                        expected = (item.x - now.x, center_y - self.geometry["road_y"])
-                        self.assertEqual(now.pose, self.model["cells"][item.row][-1])
-                    actual = self.model["tip"][now.pose]
-                    for coordinate, target in zip(actual, expected):
-                        self.assertAlmostEqual(coordinate, target, delta=0.02)
-                    events[item, at_tray, arriving] += 1
                 self.assertEqual(
-                    events,
-                    Counter(
-                        (item, tray, arriving)
-                        for item in stops
-                        for tray in (True, False)
-                        for arriving in (True, False)
+                    s.target,
+                    (
+                        s.tile.x,
+                        self.geometry["top"]
+                        + s.tile.row * self.geometry["pitch"]
+                        + self.geometry["size"] / 2,
                     ),
                 )
 

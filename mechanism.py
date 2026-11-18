@@ -1,17 +1,18 @@
-"""Plan the shuttle's reversible collection route and animate its baked 3D poses."""
+"""Choreograph a single-arm arcade mission in the calendar's SVG coordinates."""
 
-from dataclasses import dataclass, replace
+from dataclasses import dataclass
 from datetime import date
 from functools import lru_cache
 import gzip
+from hashlib import sha256
 import json
+from math import atan2, degrees, hypot
 from pathlib import Path
-from typing import Optional
+from random import Random
 
 ASSETS = Path(__file__).resolve().parent / "assets" / "rover"
-WIDTH = 978
-HEIGHT = 216
-LEFT = 14
+WIDTH, HEIGHT, LEFT, DOCK = 978, 216, 14, 777
+BARREL = 36  # Distance in illustration pixels from the grip to the luminous ring.
 
 
 @lru_cache(maxsize=1)
@@ -23,17 +24,6 @@ def rig():
 def pose_library():
     with gzip.open(ASSETS / "geometry.json.gz", "rt", encoding="utf-8") as source:
         return json.load(source)
-
-
-def artwork(frames):
-    # A quiet or empty year does not need the full motion library.
-    used = (
-        {f"a{f.pose}" for f in frames}
-        | {f"c{f.wheel}" for f in frames}
-        | {f"h{f.jaw}" for f in frames}
-    )
-    library = pose_library()
-    return "\n".join(library[key] for key in sorted(used))
 
 
 @dataclass(frozen=True)
@@ -49,200 +39,144 @@ class Stop:
 class Frame:
     ms: int
     x: float
-    wheel: int = 0
-    pose: int = 0
-    jaw: int = 0
-    held: Optional[Stop] = None
-    cargo: tuple[Stop, ...] = ()
+    wheel: int
+    pose: int
+    angle: float
 
 
-def route_stops(active, limit=6):
-    """Sample occupied days across the year, starting with the latest one."""
-    if len(active) <= limit:
-        return list(reversed(active))
-    selected = []
-    for i in range(limit):
-        section = active[i * len(active) // limit : (i + 1) * len(active) // limit]
-        selected.append(
-            active[-1]
-            if i == limit - 1
-            else max(section, key=lambda s: (s.count, s.day))
-        )
-    return list(reversed(selected))
+@dataclass(frozen=True)
+class Shot:
+    tile: Stop
+    muzzle: tuple[float, float]
+    target: tuple[float, float]
+    fired: int
+    hit: int
+
+
+def ease(t):
+    return t * t * (3 - 2 * t)
+
+
+def calendar_seed(username, end, active):
+    records = ",".join(str(d.day) for d in active)
+    return sha256(f"{username.lower()}/{end}/{records}".encode()).digest()
 
 
 class Route:
-    def __init__(self, stops, model):
+    def __init__(self, active, model, seed):
         self.model = model
-        self.stops = stops
-        self.frames = [Frame(0, self.station(stops[0]) if stops else WIDTH - 80)]
-        self.distance = 0.0
-        if not stops:
+        self.stance = model["slots"][0]
+        self.frames = [Frame(0, DOCK, 0, self.stance[9], -133)]
+        self.shots = []
+        self.deployment = self.signal = self.hoist = 0
+        if not active:
             return
-        capacity = len(model["slots"])
-        self.advance(180)
-        for start in range(0, len(stops), capacity):
-            batch = stops[start : start + capacity]
-            for slot, item in enumerate(batch):
-                self.drive(self.station(item))
-                self.collect(item, slot)
-            # Take the loaded shuttle a little beyond the last stop before
-            # returning its cargo. This also gives a one-day calendar a real trip.
-            x = self.frames[-1].x
-            self.drive(x + (60 if x < WIDTH / 2 else -60))
-            self.advance(180)
-            for slot in reversed(range(len(batch))):
-                item = batch[slot]
-                self.drive(self.station(item))
-                self.restore(item, slot)
-        self.drive(self.frames[0].x)
-        self.advance(220)
+        rng = Random(seed)
+        remaining = list(active)
+        count = len(remaining)
+        burst_x = 0
+        burst_left = 0
+        geom = model["geometry"]
+        centers_y = [
+            geom["top"] + row * geom["pitch"] + geom["size"] / 2 for row in range(7)
+        ]
+        poses = [self.stance[2 + round(row * 8 / 6)] for row in range(7)]
 
-    def station(self, stop):
-        return stop.x - self.model["geometry"]["pick_x"]
+        def eligible(cart):
+            result = []
+            for tile in remaining:
+                px, py = model["tip"][poses[tile.row]]
+                gap = hypot(
+                    tile.x - cart - px, centers_y[tile.row] - geom["road_y"] - py
+                )
+                if gap >= BARREL + 16:
+                    result.append(tile)
+            return result
 
-    def advance(self, duration, **changes):
-        self.frames.append(
-            replace(self.frames[-1], ms=self.frames[-1].ms + duration, **changes)
+        self.move(270, DOCK, self.stance[9], -133)
+        for index in range(count):
+            # The whole year gets one out-and-back sweep while the light head follows each burst.
+            t = index / max(1, count - 1)
+            x = 109 + (DOCK - 109) * ease(abs(1 - 2 * t))
+            choices = eligible(x)
+            if not choices:
+                # A sparse year's last tile can sit directly over the prop. Roll clear first.
+                tile = remaining[0]
+                x = max(
+                    109, min(847, tile.x + 143 if tile.x < WIDTH / 2 else tile.x - 111)
+                )
+                choices = eligible(x)
+            start_burst = burst_left == 0
+            if start_burst:
+                burst_left = rng.randint(3, 7)
+            else:
+                nearby = [tile for tile in choices if abs(tile.x - burst_x) <= 60]
+                if nearby:
+                    choices = nearby
+            tile = rng.choice(choices)
+            remaining.remove(tile)
+            burst_x = tile.x if start_burst else burst_x
+            burst_left -= 1
+            x = round(x, 3)
+            target = (tile.x, centers_y[tile.row])
+            pose = poses[tile.row]
+            tip = model["tip"][pose]
+            y = geom["road_y"] + tip[1]
+            dx, dy = target[0] - x - tip[0], target[1] - y
+            distance = hypot(dx, dy)
+            angle = round(degrees(atan2(dy, dx)), 4)
+            last = self.frames[-1]
+            # Long pans get a readable beat. In a busy year adjacent shots are short.
+            slew = max(
+                48 if count > 36 else 155,
+                round(abs(last.angle - angle) * 0.62),
+                round(abs(x - last.x) * 2.15),
+                12 * abs(self.stance.index(last.pose) - self.stance.index(pose)),
+            )
+            if start_burst:
+                slew += 58
+            self.move(slew, x, pose, angle)
+            muzzle = (x + tip[0] + dx * BARREL / distance, y + dy * BARREL / distance)
+            fire = self.time
+            self.shots.append(Shot(tile, muzzle, target, fire, fire + 43))
+            self.move(61, x, pose, angle)
+        self.move(
+            max(390, round(abs(self.frames[-1].x - DOCK) * 3)),
+            DOCK,
+            self.stance[9],
+            -128,
         )
+        self.deployment = self.time + 170
+        self.signal = self.deployment + 1050
+        self.hoist = self.signal + 740
+        self.move(self.hoist + 3450 - self.time, DOCK, self.stance[9], -128)
 
-    def handoff(self, **changes):
-        self.frames[-1] = replace(self.frames[-1], **changes)
+    @property
+    def time(self):
+        return self.frames[-1].ms
 
-    def drive(self, end):
-        start = self.frames[-1].x
-        distance = end - start
-        if abs(distance) < 0.01:
+    def move(self, duration, x, pose, angle):
+        start = self.frames[-1]
+        if (start.x, start.pose, start.angle) == (x, pose, angle):
+            self.frames.append(Frame(start.ms + duration, x, start.wheel, pose, angle))
             return
-        duration = round(350 + abs(distance) * 5.5)
-        steps = max(2, round(duration / 38))
+        steps = max(2, round(duration / 33))
+        first, last = self.stance.index(start.pose), self.stance.index(pose)
         for i in range(1, steps + 1):
-            t = i / steps
-            travel = distance * t * t * (3 - 2 * t)
-            # The wheels turn with road distance, including when backing up.
-            phase = round(-(self.distance + travel) * self.model["wheel_frames"] / 98)
-            dt = i * duration // steps - (i - 1) * duration // steps
-            self.advance(
-                dt, x=round(start + travel, 3), wheel=phase % self.model["wheel_frames"]
+            u = ease(i / steps)
+            cart = round(start.x + (x - start.x) * u, 3)
+            wrist = self.stance[round(first + (last - first) * u)]
+            direction = round(start.angle + (angle - start.angle) * u, 4)
+            wheel = (
+                round((DOCK - cart) * self.model["wheel_frames"] / 98)
+                % self.model["wheel_frames"]
             )
-        self.distance += distance
-
-    def reach(self, path, duration, returning=False):
-        frames = list(reversed(path)) if returning else path
-        steps = len(frames) - 1
-        for i, pose in enumerate(frames[1:], 1):
-            self.advance(i * duration // steps - (i - 1) * duration // steps, pose=pose)
-
-    def close(self):
-        self.advance(80, jaw=1)
-        self.advance(80, jaw=2)
-
-    def open(self):
-        self.advance(80, jaw=1)
-        self.advance(80, jaw=0)
-
-    def collect(self, item, slot):
-        cell_path, tray_path = self.model["cells"][item.row], self.model["slots"][slot]
-        self.reach(cell_path, 940)
-        self.close()
-        self.handoff(held=item)
-        self.advance(100)
-        self.reach(cell_path, 760, returning=True)
-        self.reach(tray_path, 420)
-        self.handoff(held=None, cargo=self.frames[-1].cargo + (item,))
-        self.open()
-        self.reach(tray_path, 350, returning=True)
-
-    def restore(self, item, slot):
-        cell_path, tray_path = self.model["cells"][item.row], self.model["slots"][slot]
-        self.reach(tray_path, 380)
-        self.close()
-        self.handoff(held=item, cargo=self.frames[-1].cargo[:-1])
-        self.reach(tray_path, 390, returning=True)
-        self.reach(cell_path, 850)
-        self.handoff(held=None)
-        self.open()
-        self.advance(80)
-        self.reach(cell_path, 780, returning=True)
-
-
-def animate(frames, attribute, value, mode="discrete"):
-    """Encode changes only. Linear tracks also need the ends of their holds."""
-    values = [value(f) for f in frames]
-    keys = [0]
-    for i in range(1, len(frames) - 1):
-        if values[i] != values[i - 1] or (
-            mode == "linear" and values[i] != values[i + 1]
-        ):
-            keys.append(i)
-    if len(keys) == 1 and values[-1] == values[0]:
-        return ""
-    keys.append(len(frames) - 1)
-    duration = frames[-1].ms
-    times = ";".join(
-        f"{frames[i].ms/duration:.6f}".rstrip("0").rstrip(".") for i in keys
-    )
-    vals = ";".join(str(values[i]) for i in keys)
-    tag = "animateTransform" if attribute == "transform" else "animate"
-    kind = ' type="translate"' if tag == "animateTransform" else ""
-    return (
-        f'<{tag} attributeName="{attribute}"{kind} dur="{duration}ms" repeatCount="indefinite" '
-        f'calcMode="{mode}" keyTimes="{times}" values="{vals}"/>'
-    )
-
-
-def xy(point):
-    return " ".join(
-        f"{coordinate:.3f}".rstrip("0").rstrip(".") or "0" for coordinate in point
-    )
-
-
-def sprite(prefix, field, frames):
-    def ref(frame):
-        return f"#{prefix}{getattr(frame, field)}"
-
-    return f'<use href="{ref(frames[0])}">{animate(frames,"href",ref)}</use>'
-
-
-def trolley(route, moving):
-    model = route.model
-    frames = route.frames if moving else route.frames[:1]
-    road = model["geometry"]["road_y"]
-
-    def base(frame):
-        return xy((frame.x, road))
-
-    def tool(frame):
-        return xy(model["tip"][frame.pose])
-
-    layout = [
-        f'<g transform="translate({base(frames[0])})" data-part="shuttle">',
-        animate(frames, "transform", base, "linear"),
-        '<ellipse cx="-9" cy="5" rx="67" ry="11" fill="url(#tire-shadow)"/>',
-        sprite("c", "wheel", frames),
-    ]
-    if moving:
-        for i, item in enumerate(route.stops):
-            slot = i % len(model["slots"])
-            where = model["tip"][model["slots"][slot][-1]]
-            show = animate(
-                frames,
-                "opacity",
-                lambda f: int(len(f.cargo) > slot and f.cargo[slot] == item),
+            self.frames.append(
+                Frame(start.ms + i * duration // steps, cart, wheel, wrist, direction)
             )
-            layout.append(
-                f'<g class="l{item.shade}" transform="translate({xy(where)})" opacity="0">{show}<use href="#block"/></g>'
-            )
-    layout.append(sprite("a", "pose", frames))
-    layout += [
-        f'<g data-part="pinch" transform="translate({tool(frames[0])})">',
-        animate(frames, "transform", tool),
-    ]
-    if moving:
-        for item in route.stops:
-            show = animate(frames, "opacity", lambda f: int(f.held == item))
-            layout.append(
-                f'<g class="l{item.shade}" opacity="0">{show}<use href="#block"/></g>'
-            )
-    layout.extend((sprite("h", "jaw", frames), "</g></g>"))
-    return "".join(layout)
+
+
+def artwork(frames):
+    used = {f"a{f.pose}" for f in frames} | {f"c{f.wheel}" for f in frames} | {"h2"}
+    library = pose_library()
+    return "\n".join(library[key] for key in sorted(used))
