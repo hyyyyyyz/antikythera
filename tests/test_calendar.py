@@ -71,16 +71,17 @@ class Drawing(unittest.TestCase):
                 self.assertEqual(level(threshold - 1), i - 1)
         self.assertEqual(level(1000), 9)
 
-    def test_mobile_calendar_matches_desktop_at_extreme_rail_positions(self):
+    def test_one_strip_at_extreme_positions(self):
         for offset in (0, 1, 3, 177, 180, 184, 360, 364):
-            day = END - timedelta(days=offset)
-            counts = {day: 84}
-            boards = [ET.fromstring(render("demo", END, counts, compact=mode)) for mode in (False, True)]
-            self.assertEqual([b.find("s:desc", SVG).text for b in boards], [boards[0].find("s:desc", SVG).text]*2)
-            for board in boards:
-                self.assertEqual(len(board.findall(".//s:g/s:title", SVG)),365)
-                labels = [node.text for node in board.findall(".//s:text", SVG)]
-                self.assertTrue(all(caption in labels for _, _, caption in BANDS))
+            counts = {END - timedelta(days=offset): 84}
+            board = ET.fromstring(render("demo", END, counts))
+            cells = [g for g in board.findall("s:g", SVG) if g.find("s:title", SVG) is not None]
+            positions = [g.get("transform").split("(")[1][:-1].split() for g in cells]
+            self.assertEqual(len(cells), 365)
+            self.assertEqual(len({x for x, _ in positions}), 53)
+            self.assertEqual(len({y for _, y in positions}), 7)
+            self.assertFalse(board.findall(".//s:text", SVG))
+            self.assertIn("prefers-color-scheme:dark", board.find("s:style", SVG).text)
 
 
 

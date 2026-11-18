@@ -17,7 +17,7 @@ inputs:
     required: false
     default: assembly-log.svg
   compact-output:
-    description: Optional destination for the portrait calendar SVG.
+    description: Optional second destination for the same single-strip SVG.
     required: false
 runs:
   using: composite

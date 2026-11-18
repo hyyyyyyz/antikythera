@@ -1,1196 +1,1133 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="332" viewBox="0 0 1000 332" role="img" aria-labelledby="title desc">
-<title id="title">Antikythera assembly log for hyyyyyyz</title>
-<desc id="desc">1,699 public commit contributions from 2025-11-19 through 2026-11-18. Each socket is one day. A brass and ceramic robot places the latest chip.</desc>
-<style>.cycle{display:none}@media(prefers-reduced-motion:no-preference){.cycle{display:inline}.parked{display:none}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="978" height="164" viewBox="0 0 978 164" role="img" aria-labelledby="title desc">
+<title id="title">Commit calendar for hyyyyyyz</title>
+<desc id="desc">1,699 public commit contributions from 2025-11-19 through 2026-11-18. Each square is one day. The arm places the most recent active day.</desc>
+<style>.l0{fill:#edf0f3}.l1{fill:#c6d6e5}.l2{fill:#afc8dc}.l3{fill:#96b6cf}.l4{fill:#7ca3c2}.l5{fill:#638faf}.l6{fill:#4e799c}.l7{fill:#3c678a}.l8{fill:#2b5576}.l9{fill:#1a425f}@media(prefers-color-scheme:dark){.l0{fill:#212b36}.l1{fill:#30455e}.l2{fill:#3e5774}.l3{fill:#4c6988}.l4{fill:#5a7d9e}.l5{fill:#7192ae}.l6{fill:#88a8bf}.l7{fill:#9ebdd0}.l8{fill:#b8d3e0}.l9{fill:#d5e9ef}}.cycle{display:none}@media(prefers-reduced-motion:no-preference){.cycle{display:inline}.parked{display:none}}</style>
 <defs>
-<linearGradient id="alloy" x2=".28" y2="1" gradientUnits="objectBoundingBox">
-  <stop stop-color="#ffe0a0"/><stop offset=".27" stop-color="#efb76b"/>
-  <stop offset=".63" stop-color="#c78842"/><stop offset="1" stop-color="#875132"/>
+<linearGradient id="shell" x1="0" y1="0" x2=".22" y2="1">
+  <stop stop-color="#fff"/><stop offset=".45" stop-color="#e8ecec"/><stop offset="1" stop-color="#9daab0"/>
 </linearGradient>
-<linearGradient id="ceramic" x2=".2" y2="1">
-  <stop stop-color="#fff7d9"/><stop offset=".42" stop-color="#dfd8bd"/>
-  <stop offset="1" stop-color="#a19d87"/>
+<linearGradient id="rubber" x2=".15" y2="1">
+  <stop stop-color="#58616a"/><stop offset=".48" stop-color="#30373f"/><stop offset="1" stop-color="#151b21"/>
 </linearGradient>
-<linearGradient id="steel" x2=".3" y2="1">
-  <stop stop-color="#a8b3a9"/><stop offset=".38" stop-color="#576765"/>
-  <stop offset="1" stop-color="#303b3e"/>
-</linearGradient>
-<radialGradient id="hub" cx=".33" cy=".27" r=".9">
-  <stop stop-color="#a7aea0"/><stop offset=".6" stop-color="#67746b"/><stop offset="1" stop-color="#434d49"/>
-</radialGradient>
-<g id="bearing"><circle r="12" fill="#1a2222" stroke="#c4ab85" stroke-width=".9"/>
-  <circle r="9.6" fill="url(#hub)" stroke="#48524a"/><circle r="6.7" fill="#39413f" stroke="#a6a692" stroke-width=".8"/>
-  <path d="M-3.5-1.8 0-3.8l3.5 2v3.6l-3.5 2-3.5-2z" fill="#b6b6a2"/>
-  <circle cx="-7" cy="-5" r=".9" fill="#e5d5a9"/><circle cx="7" cy="5" r=".9" fill="#202a27"/></g>
-<g id="upper-casting">
-  <path d="M-9 4Q-12-10 1-12L54-15Q61-16 68-11L82-7 84 5 62 10 14 12Q2 16-9 4Z" fill="url(#alloy)" stroke="#372f24" stroke-width="2"/>
-  <path d="M5-8 54-11 66-8" fill="none" stroke="#ffe8ae" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="m18 2 37-5 8 2-9 5-35 4z" fill="#76522e"/><path d="m21 2 32-4" stroke="#ac8055"/>
-  <path d="m2 15 16 2 43-7 12 0" fill="none" stroke="#172223" stroke-width="4"/><path d="m2 14 16 2 43-7" fill="none" stroke="#58645c" stroke-width="1.2"/>
-  <circle cx="11" cy="-5" r="1.6" fill="#584a38"/><circle cx="64" cy="3" r="1.4" fill="#6f5134"/>
-</g>
-<g id="forearm-casting">
-  <path d="M-6-7 11-11 63-6 84-3 84 5 60 7 13 10-7 7z" fill="url(#ceramic)" stroke="#31372e" stroke-width="1.8"/>
-  <path d="M10-7 57-4" stroke="#fff5d8" stroke-width="2"/>
-  <path d="m17 1 42 1-7 3-35-1z" fill="#8e917e"/><path d="m65-4 5 .5v7l-5 .2z" fill="#6b756a"/>
-  <circle cx="11" cy="3" r="1.4" fill="#687064"/>
-</g>
-<g id="socket"><rect x=".4" y=".4" width="9.2" height="9.2" rx="1.8" fill="#182324" stroke="#3b4542" stroke-width=".7"/><circle cx="5" cy="5" r=".95" fill="#3b4642"/></g><g id="chip-1"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#526b95"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-2"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#707db8"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-3"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#957fc0"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-4"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#b282ba"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-5"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#d28ba7"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-6"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#e99a88"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-7"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#f5b074"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-8"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#f8d078"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><g id="chip-9"><path d="M.5 3V1L2 .5h6l1.5 1v7l-1 1H2l-1.5-1z" fill="#ffecae"/><path d="M1.6 5V2.4l1.1-.8h4.8" fill="none" stroke="#fff3d4" opacity=".44" stroke-width=".7"/><path d="M2.3 8.6h5.4l1-1" fill="none" stroke="#162020" opacity=".35" stroke-width=".8"/><rect x="2.5" y="2.5" width="1.1" height="1.1" fill="#ffefcc" opacity=".75"/></g><linearGradient id="case" x2=".9" y2="1"><stop stop-color="#202a29"/><stop offset=".57" stop-color="#172323"/><stop offset="1" stop-color="#172020"/></linearGradient><linearGradient id="deck" x2="0" y2="1"><stop stop-color="#182321"/><stop offset="1" stop-color="#202b28"/></linearGradient><pattern id="milling" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 .5h4" stroke="#eef0cc" opacity=".023"/></pattern><pattern id="holes" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".65" fill="#879284" opacity=".3"/></pattern></defs>
-<rect x=".6" y=".6" width="998.8" height="330.8" rx="14" fill="url(#case)" stroke="#657063"/>
-<rect x="2" y="2" width="996" height="328" rx="13" fill="url(#milling)"/>
-<g transform="translate(9 9)"><circle r="2.1" fill="#19201f" stroke="#60665b" stroke-width=".6"/><path d="m-1 .7 2-1.4" stroke="#899080" stroke-width=".65"/></g>
-<g transform="translate(9 323)"><circle r="2.1" fill="#19201f" stroke="#60665b" stroke-width=".6"/><path d="m-1 .7 2-1.4" stroke="#899080" stroke-width=".65"/></g>
-<g transform="translate(991 9)"><circle r="2.1" fill="#19201f" stroke="#60665b" stroke-width=".6"/><path d="m-1 .7 2-1.4" stroke="#899080" stroke-width=".65"/></g>
-<g transform="translate(991 323)"><circle r="2.1" fill="#19201f" stroke="#60665b" stroke-width=".6"/><path d="m-1 .7 2-1.4" stroke="#899080" stroke-width=".65"/></g>
-<g transform="translate(55 49) scale(1.03)"><circle r="22.5" fill="#24302e" stroke="#aa966e"/><circle r="19" fill="#263330" stroke="#756f56" stroke-width=".7"/><g stroke="#cfb580" stroke-width="1"><path d="M0-18v3" transform="rotate(0)"/><path d="M0-18v3" transform="rotate(15)"/><path d="M0-18v3" transform="rotate(30)"/><path d="M0-18v3" transform="rotate(45)"/><path d="M0-18v3" transform="rotate(60)"/><path d="M0-18v3" transform="rotate(75)"/><path d="M0-18v3" transform="rotate(90)"/><path d="M0-18v3" transform="rotate(105)"/><path d="M0-18v3" transform="rotate(120)"/><path d="M0-18v3" transform="rotate(135)"/><path d="M0-18v3" transform="rotate(150)"/><path d="M0-18v3" transform="rotate(165)"/><path d="M0-18v3" transform="rotate(180)"/><path d="M0-18v3" transform="rotate(195)"/><path d="M0-18v3" transform="rotate(210)"/><path d="M0-18v3" transform="rotate(225)"/><path d="M0-18v3" transform="rotate(240)"/><path d="M0-18v3" transform="rotate(255)"/><path d="M0-18v3" transform="rotate(270)"/><path d="M0-18v3" transform="rotate(285)"/><path d="M0-18v3" transform="rotate(300)"/><path d="M0-18v3" transform="rotate(315)"/><path d="M0-18v3" transform="rotate(330)"/><path d="M0-18v3" transform="rotate(345)"/></g><circle r="12" fill="none" stroke="#c2a476" stroke-width="1.2"/><path d="M-12 7 8-12 2 2Z" fill="#eed093"/><path d="m8-12-6 14-14 5Z" fill="#af8c51"/><circle r="3" fill="#f0d3a3" stroke="#635d44"/></g>
-<text x="91" y="62" fill="#f1eddd" font-family="'Baskervville',Georgia,'Times New Roman',serif" font-size="47" font-weight="400" letter-spacing="-1.9" text-anchor="start">Antikythera</text>
-<text x="969" y="55" fill="#f3d499" font-family="'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="39" font-weight="600" letter-spacing="-1.5" text-anchor="end">1,699</text>
-<text x="969" y="74" fill="#b0b9ad" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10.5" font-weight="400" letter-spacing="1.2" text-anchor="end">PUBLIC COMMITS</text>
-<text x="92" y="82" fill="#bcc1b2" font-family="'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" letter-spacing="0" text-anchor="start">@hyyyyyyz  ·  Nov 19, 2025 – Nov 18, 2026</text>
-<rect x="26" y="100" width="948" height="163" rx="7" fill="url(#deck)" stroke="#566052"/>
-<svg x="807" y="107" width="158" height="141" viewBox="0 0 158 141"><rect width="100%" height="100%" fill="url(#holes)"/>
-<circle cx="92" cy="135" r="36" fill="none" stroke="#617163" stroke-width=".7" stroke-dasharray="3 4" opacity=".62"/>
-<circle cx="92" cy="135" r="63" fill="none" stroke="#617163" stroke-width=".7" stroke-dasharray="3 4" opacity=".62"/>
-<circle cx="92" cy="135" r="89" fill="none" stroke="#617163" stroke-width=".7" stroke-dasharray="3 4" opacity=".62"/>
-<circle cx="92" cy="135" r="116" fill="none" stroke="#617163" stroke-width=".7" stroke-dasharray="3 4" opacity=".62"/>
-</svg>
-<g transform="translate(69.0 175.8)"><title>2025-11-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
-</g>
-<g transform="translate(69.0 189.4)"><title>2025-11-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
-</g>
-<g transform="translate(69.0 203.0)"><title>2025-11-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
-</g>
-<g transform="translate(69.0 216.6)"><title>2025-11-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
-</g>
-<g transform="translate(82.6 135.0)"><title>2025-11-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
-</g>
-<g transform="translate(82.6 148.6)"><title>2025-11-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g id="upper-shell">
+  <path d="M-5-9C0-15 10-14 17-11L41-5Q47-3 52-6L59-9Q64-11 68-5L69 2Q68 8 62 9L51 10Q41 11 32 7L8 5Q-4 7-6 2Z" fill="url(#shell)" stroke="#828f96" stroke-width="1.15"/>
+  <path d="M8-10Q12-10 16-8L39-3" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M18-10 23-9 19 6 15 5Z" fill="#39424a"/><path d="m23-9 2 .5-4 15h-2z" fill="#858f91"/>
+  <path d="M34 5Q47 10 57 6" fill="none" stroke="#8a989d" stroke-width="1.4"/>
 </g>
-<g transform="translate(82.6 162.2)"><title>2025-11-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g id="forearm-shell">
+  <path d="M-4-6Q1-11 9-10L18-9Q25-9 29-5L37 0Q41 3 46 3L58 0 65-4Q69-5 71-1V5Q64 13 57 14L43 14Q35 14 28 9L17 3 6 4Q-4 6-6 1Z" fill="url(#shell)" stroke="#828f96" stroke-width="1.15"/>
+  <path d="M7-7Q19-8 25-4L36 3" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round"/>
+  <path d="m42 2 5 .3-1 12-5-.4Z" fill="#35404a"/><path d="m48 2 1.5-.4-1 12.3H47Z" fill="#879397"/>
 </g>
-<g transform="translate(82.6 175.8)"><title>2025-11-26 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g id="turntable">
+  <path d="M-21-4Q-20-8-13-9H12Q20-8 22-4L24 0Q17 5 0 5T-24 0Z" fill="url(#rubber)" stroke="#78838a" stroke-width=".9"/>
+  <ellipse cy="-4.5" rx="19.2" ry="4.1" fill="#bcc5c7"/>
+  <path d="M-15-7V-15Q-16-24-23-30L-29-36Q-30-42-24-45Q-18-48-13-44L0-34Q10-26 12-17L14-8Q7-4-3-4Z" fill="url(#shell)" stroke="#829197" stroke-width="1.2"/>
+  <path d="M-15-12Q-2-8 12-13v5Q-1-4-15-8Z" fill="#323e46"/>
 </g>
-<g transform="translate(82.6 189.4)"><title>2025-11-27 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g id="rotary">
+  <ellipse rx="8" ry="9" fill="#253038" stroke="#97a1a3" stroke-width="1.1"/>
+  <ellipse cx="-1.2" cy="-.8" rx="5.6" ry="6.7" fill="#465159"/>
+  <path d="M-5-4.8Q-1-8.4 3-4.2" fill="none" stroke="#8b999e" stroke-width="1.1"/>
 </g>
-<g transform="translate(82.6 203.0)"><title>2025-11-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+</defs>
+<g transform="translate(12 79)"><title>2025-11-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(82.6 216.6)"><title>2025-11-29 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(12 94)"><title>2025-11-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(96.2 135.0)"><title>2025-11-30 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(12 109)"><title>2025-11-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="96.2" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Dec</text>
-<g transform="translate(96.2 148.6)"><title>2025-12-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(12 124)"><title>2025-11-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(96.2 162.2)"><title>2025-12-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 34)"><title>2025-11-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(96.2 175.8)"><title>2025-12-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 49)"><title>2025-11-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(96.2 189.4)"><title>2025-12-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 64)"><title>2025-11-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(96.2 203.0)"><title>2025-12-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 79)"><title>2025-11-26 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(96.2 216.6)"><title>2025-12-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 94)"><title>2025-11-27 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(109.8 135.0)"><title>2025-12-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 109)"><title>2025-11-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(109.8 148.6)"><title>2025-12-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(27 124)"><title>2025-11-29 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(109.8 162.2)"><title>2025-12-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 34)"><title>2025-11-30 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(109.8 175.8)"><title>2025-12-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 49)"><title>2025-12-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(109.8 189.4)"><title>2025-12-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 64)"><title>2025-12-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(109.8 203.0)"><title>2025-12-12 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 79)"><title>2025-12-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(109.8 216.6)"><title>2025-12-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 94)"><title>2025-12-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 135.0)"><title>2025-12-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 109)"><title>2025-12-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 148.6)"><title>2025-12-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(42 124)"><title>2025-12-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 162.2)"><title>2025-12-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(57 34)"><title>2025-12-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 175.8)"><title>2025-12-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(57 49)"><title>2025-12-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 189.4)"><title>2025-12-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(57 64)"><title>2025-12-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 203.0)"><title>2025-12-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(57 79)"><title>2025-12-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(123.4 216.6)"><title>2025-12-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(57 94)"><title>2025-12-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 135.0)"><title>2025-12-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(57 109)"><title>2025-12-12 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 148.6)"><title>2025-12-22 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(57 124)"><title>2025-12-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 162.2)"><title>2025-12-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(72 34)"><title>2025-12-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 175.8)"><title>2025-12-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(72 49)"><title>2025-12-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 189.4)"><title>2025-12-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(72 64)"><title>2025-12-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 203.0)"><title>2025-12-26 · 9 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(72 79)"><title>2025-12-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(137.0 216.6)"><title>2025-12-27 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(72 94)"><title>2025-12-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(150.6 135.0)"><title>2025-12-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(72 109)"><title>2025-12-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(150.6 148.6)"><title>2025-12-29 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(72 124)"><title>2025-12-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(150.6 162.2)"><title>2025-12-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 34)"><title>2025-12-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(150.6 175.8)"><title>2025-12-31 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 49)"><title>2025-12-22 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<text x="150.6" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Jan</text>
-<g transform="translate(150.6 189.4)"><title>2026-01-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 64)"><title>2025-12-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(150.6 203.0)"><title>2026-01-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 79)"><title>2025-12-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(150.6 216.6)"><title>2026-01-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 94)"><title>2025-12-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(164.2 135.0)"><title>2026-01-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 109)"><title>2025-12-26 · 9 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(164.2 148.6)"><title>2026-01-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(87 124)"><title>2025-12-27 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(164.2 162.2)"><title>2026-01-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(102 34)"><title>2025-12-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(164.2 175.8)"><title>2026-01-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(102 49)"><title>2025-12-29 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(164.2 189.4)"><title>2026-01-08 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(102 64)"><title>2025-12-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(164.2 203.0)"><title>2026-01-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(102 79)"><title>2025-12-31 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(164.2 216.6)"><title>2026-01-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(102 94)"><title>2026-01-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 135.0)"><title>2026-01-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(102 109)"><title>2026-01-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 148.6)"><title>2026-01-12 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(102 124)"><title>2026-01-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 162.2)"><title>2026-01-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(117 34)"><title>2026-01-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 175.8)"><title>2026-01-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(117 49)"><title>2026-01-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 189.4)"><title>2026-01-15 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(117 64)"><title>2026-01-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 203.0)"><title>2026-01-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(117 79)"><title>2026-01-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(177.8 216.6)"><title>2026-01-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(117 94)"><title>2026-01-08 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(191.4 135.0)"><title>2026-01-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(117 109)"><title>2026-01-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(191.4 148.6)"><title>2026-01-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(117 124)"><title>2026-01-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(191.4 162.2)"><title>2026-01-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 34)"><title>2026-01-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(191.4 175.8)"><title>2026-01-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 49)"><title>2026-01-12 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(191.4 189.4)"><title>2026-01-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 64)"><title>2026-01-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(191.4 203.0)"><title>2026-01-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 79)"><title>2026-01-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(191.4 216.6)"><title>2026-01-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 94)"><title>2026-01-15 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(205.0 135.0)"><title>2026-01-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 109)"><title>2026-01-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(205.0 148.6)"><title>2026-01-26 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(132 124)"><title>2026-01-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(205.0 162.2)"><title>2026-01-27 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(147 34)"><title>2026-01-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(205.0 175.8)"><title>2026-01-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(147 49)"><title>2026-01-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(205.0 189.4)"><title>2026-01-29 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(147 64)"><title>2026-01-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(205.0 203.0)"><title>2026-01-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(147 79)"><title>2026-01-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(205.0 216.6)"><title>2026-01-31 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(147 94)"><title>2026-01-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="218.6" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Feb</text>
-<g transform="translate(218.6 135.0)"><title>2026-02-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(147 109)"><title>2026-01-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(218.6 148.6)"><title>2026-02-02 · 6 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(147 124)"><title>2026-01-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(218.6 162.2)"><title>2026-02-03 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(162 34)"><title>2026-01-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(218.6 175.8)"><title>2026-02-04 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(162 49)"><title>2026-01-26 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(218.6 189.4)"><title>2026-02-05 · 8 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(162 64)"><title>2026-01-27 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(218.6 203.0)"><title>2026-02-06 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(162 79)"><title>2026-01-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(218.6 216.6)"><title>2026-02-07 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(162 94)"><title>2026-01-29 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(232.2 135.0)"><title>2026-02-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(162 109)"><title>2026-01-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(232.2 148.6)"><title>2026-02-09 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(162 124)"><title>2026-01-31 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(232.2 162.2)"><title>2026-02-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(177 34)"><title>2026-02-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(232.2 175.8)"><title>2026-02-11 · 13 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(177 49)"><title>2026-02-02 · 6 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(232.2 189.4)"><title>2026-02-12 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(177 64)"><title>2026-02-03 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(232.2 203.0)"><title>2026-02-13 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(177 79)"><title>2026-02-04 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(232.2 216.6)"><title>2026-02-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(177 94)"><title>2026-02-05 · 8 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(245.8 135.0)"><title>2026-02-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(177 109)"><title>2026-02-06 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(245.8 148.6)"><title>2026-02-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(177 124)"><title>2026-02-07 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(245.8 162.2)"><title>2026-02-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(192 34)"><title>2026-02-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(245.8 175.8)"><title>2026-02-18 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(192 49)"><title>2026-02-09 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(245.8 189.4)"><title>2026-02-19 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(192 64)"><title>2026-02-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(245.8 203.0)"><title>2026-02-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(192 79)"><title>2026-02-11 · 13 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(245.8 216.6)"><title>2026-02-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(192 94)"><title>2026-02-12 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(259.4 135.0)"><title>2026-02-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(192 109)"><title>2026-02-13 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(259.4 148.6)"><title>2026-02-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(192 124)"><title>2026-02-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(259.4 162.2)"><title>2026-02-24 · 13 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(207 34)"><title>2026-02-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(259.4 175.8)"><title>2026-02-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(207 49)"><title>2026-02-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(259.4 189.4)"><title>2026-02-26 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(207 64)"><title>2026-02-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(259.4 203.0)"><title>2026-02-27 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(207 79)"><title>2026-02-18 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(259.4 216.6)"><title>2026-02-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(207 94)"><title>2026-02-19 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<text x="273.0" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Mar</text>
-<g transform="translate(273.0 135.0)"><title>2026-03-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(207 109)"><title>2026-02-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(273.0 148.6)"><title>2026-03-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(207 124)"><title>2026-02-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(273.0 162.2)"><title>2026-03-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(222 34)"><title>2026-02-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(273.0 175.8)"><title>2026-03-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(222 49)"><title>2026-02-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(273.0 189.4)"><title>2026-03-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(222 64)"><title>2026-02-24 · 13 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(273.0 203.0)"><title>2026-03-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(222 79)"><title>2026-02-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(273.0 216.6)"><title>2026-03-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(222 94)"><title>2026-02-26 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(286.6 135.0)"><title>2026-03-08 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(222 109)"><title>2026-02-27 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(286.6 148.6)"><title>2026-03-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(222 124)"><title>2026-02-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(286.6 162.2)"><title>2026-03-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(237 34)"><title>2026-03-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(286.6 175.8)"><title>2026-03-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(237 49)"><title>2026-03-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(286.6 189.4)"><title>2026-03-12 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(237 64)"><title>2026-03-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(286.6 203.0)"><title>2026-03-13 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(237 79)"><title>2026-03-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(286.6 216.6)"><title>2026-03-14 · 14 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(237 94)"><title>2026-03-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(300.2 135.0)"><title>2026-03-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(237 109)"><title>2026-03-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(300.2 148.6)"><title>2026-03-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(237 124)"><title>2026-03-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(300.2 162.2)"><title>2026-03-17 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(252 34)"><title>2026-03-08 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(300.2 175.8)"><title>2026-03-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(252 49)"><title>2026-03-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(300.2 189.4)"><title>2026-03-19 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(252 64)"><title>2026-03-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(300.2 203.0)"><title>2026-03-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(252 79)"><title>2026-03-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(300.2 216.6)"><title>2026-03-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(252 94)"><title>2026-03-12 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(313.8 135.0)"><title>2026-03-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(252 109)"><title>2026-03-13 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(313.8 148.6)"><title>2026-03-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(252 124)"><title>2026-03-14 · 14 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(313.8 162.2)"><title>2026-03-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(267 34)"><title>2026-03-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(313.8 175.8)"><title>2026-03-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(267 49)"><title>2026-03-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(313.8 189.4)"><title>2026-03-26 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(267 64)"><title>2026-03-17 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(313.8 203.0)"><title>2026-03-27 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(267 79)"><title>2026-03-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(313.8 216.6)"><title>2026-03-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(267 94)"><title>2026-03-19 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(327.4 135.0)"><title>2026-03-29 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(267 109)"><title>2026-03-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(327.4 148.6)"><title>2026-03-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(267 124)"><title>2026-03-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(327.4 162.2)"><title>2026-03-31 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(282 34)"><title>2026-03-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="327.4" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Apr</text>
-<g transform="translate(327.4 175.8)"><title>2026-04-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(282 49)"><title>2026-03-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(327.4 189.4)"><title>2026-04-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(282 64)"><title>2026-03-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(327.4 203.0)"><title>2026-04-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(282 79)"><title>2026-03-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(327.4 216.6)"><title>2026-04-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(282 94)"><title>2026-03-26 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(341.0 135.0)"><title>2026-04-05 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(282 109)"><title>2026-03-27 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(341.0 148.6)"><title>2026-04-06 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(282 124)"><title>2026-03-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(341.0 162.2)"><title>2026-04-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(297 34)"><title>2026-03-29 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(341.0 175.8)"><title>2026-04-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(297 49)"><title>2026-03-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(341.0 189.4)"><title>2026-04-09 · 6 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(297 64)"><title>2026-03-31 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(341.0 203.0)"><title>2026-04-10 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(297 79)"><title>2026-04-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(341.0 216.6)"><title>2026-04-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(297 94)"><title>2026-04-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(354.6 135.0)"><title>2026-04-12 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(297 109)"><title>2026-04-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(354.6 148.6)"><title>2026-04-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(297 124)"><title>2026-04-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(354.6 162.2)"><title>2026-04-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(312 34)"><title>2026-04-05 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(354.6 175.8)"><title>2026-04-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(312 49)"><title>2026-04-06 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(354.6 189.4)"><title>2026-04-16 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(312 64)"><title>2026-04-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(354.6 203.0)"><title>2026-04-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(312 79)"><title>2026-04-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(354.6 216.6)"><title>2026-04-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(312 94)"><title>2026-04-09 · 6 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(368.2 135.0)"><title>2026-04-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(312 109)"><title>2026-04-10 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(368.2 148.6)"><title>2026-04-20 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(312 124)"><title>2026-04-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(368.2 162.2)"><title>2026-04-21 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(327 34)"><title>2026-04-12 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(368.2 175.8)"><title>2026-04-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(327 49)"><title>2026-04-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(368.2 189.4)"><title>2026-04-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(327 64)"><title>2026-04-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(368.2 203.0)"><title>2026-04-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(327 79)"><title>2026-04-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(368.2 216.6)"><title>2026-04-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(327 94)"><title>2026-04-16 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(381.8 135.0)"><title>2026-04-26 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(327 109)"><title>2026-04-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(381.8 148.6)"><title>2026-04-27 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(327 124)"><title>2026-04-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(381.8 162.2)"><title>2026-04-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(342 34)"><title>2026-04-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(381.8 175.8)"><title>2026-04-29 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(342 49)"><title>2026-04-20 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(381.8 189.4)"><title>2026-04-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(342 64)"><title>2026-04-21 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<text x="381.8" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">May</text>
-<g transform="translate(381.8 203.0)"><title>2026-05-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(342 79)"><title>2026-04-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(381.8 216.6)"><title>2026-05-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(342 94)"><title>2026-04-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(395.4 135.0)"><title>2026-05-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(342 109)"><title>2026-04-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(395.4 148.6)"><title>2026-05-04 · 31 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(342 124)"><title>2026-04-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(395.4 162.2)"><title>2026-05-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(357 34)"><title>2026-04-26 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(395.4 175.8)"><title>2026-05-06 · 12 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(357 49)"><title>2026-04-27 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(395.4 189.4)"><title>2026-05-07 · 9 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(357 64)"><title>2026-04-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(395.4 203.0)"><title>2026-05-08 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(357 79)"><title>2026-04-29 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(395.4 216.6)"><title>2026-05-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(357 94)"><title>2026-04-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(409.0 135.0)"><title>2026-05-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(357 109)"><title>2026-05-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(409.0 148.6)"><title>2026-05-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(357 124)"><title>2026-05-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(409.0 162.2)"><title>2026-05-12 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 34)"><title>2026-05-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(409.0 175.8)"><title>2026-05-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 49)"><title>2026-05-04 · 31 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(409.0 189.4)"><title>2026-05-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 64)"><title>2026-05-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(409.0 203.0)"><title>2026-05-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 79)"><title>2026-05-06 · 12 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(409.0 216.6)"><title>2026-05-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 94)"><title>2026-05-07 · 9 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(422.6 135.0)"><title>2026-05-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 109)"><title>2026-05-08 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(422.6 148.6)"><title>2026-05-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(372 124)"><title>2026-05-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(422.6 162.2)"><title>2026-05-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 34)"><title>2026-05-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(422.6 175.8)"><title>2026-05-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 49)"><title>2026-05-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(422.6 189.4)"><title>2026-05-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 64)"><title>2026-05-12 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(422.6 203.0)"><title>2026-05-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 79)"><title>2026-05-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(422.6 216.6)"><title>2026-05-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 94)"><title>2026-05-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 135.0)"><title>2026-05-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 109)"><title>2026-05-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 148.6)"><title>2026-05-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(387 124)"><title>2026-05-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 162.2)"><title>2026-05-26 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(402 34)"><title>2026-05-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 175.8)"><title>2026-05-27 · 17 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(402 49)"><title>2026-05-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 189.4)"><title>2026-05-28 · 8 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(402 64)"><title>2026-05-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 203.0)"><title>2026-05-29 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(402 79)"><title>2026-05-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(436.2 216.6)"><title>2026-05-30 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(402 94)"><title>2026-05-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(449.8 135.0)"><title>2026-05-31 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(402 109)"><title>2026-05-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="449.8" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Jun</text>
-<g transform="translate(449.8 148.6)"><title>2026-06-01 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(402 124)"><title>2026-05-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(449.8 162.2)"><title>2026-06-02 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(417 34)"><title>2026-05-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(449.8 175.8)"><title>2026-06-03 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(417 49)"><title>2026-05-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(449.8 189.4)"><title>2026-06-04 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(417 64)"><title>2026-05-26 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(449.8 203.0)"><title>2026-06-05 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(417 79)"><title>2026-05-27 · 17 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(449.8 216.6)"><title>2026-06-06 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(417 94)"><title>2026-05-28 · 8 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(463.4 135.0)"><title>2026-06-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(417 109)"><title>2026-05-29 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(463.4 148.6)"><title>2026-06-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(417 124)"><title>2026-05-30 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(463.4 162.2)"><title>2026-06-09 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(432 34)"><title>2026-05-31 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(463.4 175.8)"><title>2026-06-10 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(432 49)"><title>2026-06-01 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(463.4 189.4)"><title>2026-06-11 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(432 64)"><title>2026-06-02 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(463.4 203.0)"><title>2026-06-12 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(432 79)"><title>2026-06-03 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(463.4 216.6)"><title>2026-06-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(432 94)"><title>2026-06-04 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(477.0 135.0)"><title>2026-06-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(432 109)"><title>2026-06-05 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(477.0 148.6)"><title>2026-06-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(432 124)"><title>2026-06-06 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(477.0 162.2)"><title>2026-06-16 · 15 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(447 34)"><title>2026-06-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(477.0 175.8)"><title>2026-06-17 · 6 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(447 49)"><title>2026-06-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(477.0 189.4)"><title>2026-06-18 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(447 64)"><title>2026-06-09 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(477.0 203.0)"><title>2026-06-19 · 9 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(447 79)"><title>2026-06-10 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(477.0 216.6)"><title>2026-06-20 · 20 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(447 94)"><title>2026-06-11 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(490.6 135.0)"><title>2026-06-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(447 109)"><title>2026-06-12 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(490.6 148.6)"><title>2026-06-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(447 124)"><title>2026-06-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(490.6 162.2)"><title>2026-06-23 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(462 34)"><title>2026-06-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(490.6 175.8)"><title>2026-06-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(462 49)"><title>2026-06-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(490.6 189.4)"><title>2026-06-25 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(462 64)"><title>2026-06-16 · 15 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(490.6 203.0)"><title>2026-06-26 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(462 79)"><title>2026-06-17 · 6 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(490.6 216.6)"><title>2026-06-27 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(462 94)"><title>2026-06-18 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(504.2 135.0)"><title>2026-06-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(462 109)"><title>2026-06-19 · 9 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(504.2 148.6)"><title>2026-06-29 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(462 124)"><title>2026-06-20 · 20 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(504.2 162.2)"><title>2026-06-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 34)"><title>2026-06-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="504.2" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Jul</text>
-<g transform="translate(504.2 175.8)"><title>2026-07-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 49)"><title>2026-06-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(504.2 189.4)"><title>2026-07-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 64)"><title>2026-06-23 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(504.2 203.0)"><title>2026-07-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 79)"><title>2026-06-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(504.2 216.6)"><title>2026-07-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 94)"><title>2026-06-25 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(517.8 135.0)"><title>2026-07-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 109)"><title>2026-06-26 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(517.8 148.6)"><title>2026-07-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(477 124)"><title>2026-06-27 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(517.8 162.2)"><title>2026-07-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(492 34)"><title>2026-06-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(517.8 175.8)"><title>2026-07-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(492 49)"><title>2026-06-29 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(517.8 189.4)"><title>2026-07-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(492 64)"><title>2026-06-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(517.8 203.0)"><title>2026-07-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(492 79)"><title>2026-07-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(517.8 216.6)"><title>2026-07-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(492 94)"><title>2026-07-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 135.0)"><title>2026-07-12 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(492 109)"><title>2026-07-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 148.6)"><title>2026-07-13 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(492 124)"><title>2026-07-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 162.2)"><title>2026-07-14 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(507 34)"><title>2026-07-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 175.8)"><title>2026-07-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(507 49)"><title>2026-07-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 189.4)"><title>2026-07-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(507 64)"><title>2026-07-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 203.0)"><title>2026-07-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(507 79)"><title>2026-07-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(531.4 216.6)"><title>2026-07-18 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(507 94)"><title>2026-07-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(545.0 135.0)"><title>2026-07-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(507 109)"><title>2026-07-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(545.0 148.6)"><title>2026-07-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(507 124)"><title>2026-07-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(545.0 162.2)"><title>2026-07-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(522 34)"><title>2026-07-12 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(545.0 175.8)"><title>2026-07-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(522 49)"><title>2026-07-13 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(545.0 189.4)"><title>2026-07-23 · 8 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(522 64)"><title>2026-07-14 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(545.0 203.0)"><title>2026-07-24 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(522 79)"><title>2026-07-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(545.0 216.6)"><title>2026-07-25 · 24 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(522 94)"><title>2026-07-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(558.6 135.0)"><title>2026-07-26 · 15 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(522 109)"><title>2026-07-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(558.6 148.6)"><title>2026-07-27 · 19 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(522 124)"><title>2026-07-18 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(558.6 162.2)"><title>2026-07-28 · 21 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(537 34)"><title>2026-07-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(558.6 175.8)"><title>2026-07-29 · 12 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(537 49)"><title>2026-07-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(558.6 189.4)"><title>2026-07-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(537 64)"><title>2026-07-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(558.6 203.0)"><title>2026-07-31 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(537 79)"><title>2026-07-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="558.5999999999999" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Aug</text>
-<g transform="translate(558.6 216.6)"><title>2026-08-01 · 21 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(537 94)"><title>2026-07-23 · 8 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(572.2 135.0)"><title>2026-08-02 · 21 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(537 109)"><title>2026-07-24 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(572.2 148.6)"><title>2026-08-03 · 13 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(537 124)"><title>2026-07-25 · 24 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(572.2 162.2)"><title>2026-08-04 · 21 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(552 34)"><title>2026-07-26 · 15 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(572.2 175.8)"><title>2026-08-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(552 49)"><title>2026-07-27 · 19 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(572.2 189.4)"><title>2026-08-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(552 64)"><title>2026-07-28 · 21 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(572.2 203.0)"><title>2026-08-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(552 79)"><title>2026-07-29 · 12 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(572.2 216.6)"><title>2026-08-08 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(552 94)"><title>2026-07-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(585.8 135.0)"><title>2026-08-09 · 6 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(552 109)"><title>2026-07-31 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(585.8 148.6)"><title>2026-08-10 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(552 124)"><title>2026-08-01 · 21 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(585.8 162.2)"><title>2026-08-11 · 5 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(567 34)"><title>2026-08-02 · 21 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(585.8 175.8)"><title>2026-08-12 · 11 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(567 49)"><title>2026-08-03 · 13 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(585.8 189.4)"><title>2026-08-13 · 8 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(567 64)"><title>2026-08-04 · 21 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(585.8 203.0)"><title>2026-08-14 · 8 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(567 79)"><title>2026-08-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(585.8 216.6)"><title>2026-08-15 · 14 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(567 94)"><title>2026-08-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(599.4 135.0)"><title>2026-08-16 · 18 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(567 109)"><title>2026-08-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(599.4 148.6)"><title>2026-08-17 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(567 124)"><title>2026-08-08 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(599.4 162.2)"><title>2026-08-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(582 34)"><title>2026-08-09 · 6 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(599.4 175.8)"><title>2026-08-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(582 49)"><title>2026-08-10 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(599.4 189.4)"><title>2026-08-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(582 64)"><title>2026-08-11 · 5 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(599.4 203.0)"><title>2026-08-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(582 79)"><title>2026-08-12 · 11 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(599.4 216.6)"><title>2026-08-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(582 94)"><title>2026-08-13 · 8 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(613.0 135.0)"><title>2026-08-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(582 109)"><title>2026-08-14 · 8 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(613.0 148.6)"><title>2026-08-24 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(582 124)"><title>2026-08-15 · 14 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(613.0 162.2)"><title>2026-08-25 · 74 commits</title>
-<use href="#chip-8" xlink:href="#chip-8"/>
+<g transform="translate(597 34)"><title>2026-08-16 · 18 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(613.0 175.8)"><title>2026-08-26 · 7 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(597 49)"><title>2026-08-17 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(613.0 189.4)"><title>2026-08-27 · 0 commits</title>
-<use href="#socket" xlink:href="#socket"/>
+<g transform="translate(597 64)"><title>2026-08-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(613.0 203.0)"><title>2026-08-28 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(597 79)"><title>2026-08-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(613.0 216.6)"><title>2026-08-29 · 84 commits</title>
-<use href="#chip-9" xlink:href="#chip-9"/>
+<g transform="translate(597 94)"><title>2026-08-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(626.6 135.0)"><title>2026-08-30 · 95 commits</title>
-<use href="#chip-9" xlink:href="#chip-9"/>
+<g transform="translate(597 109)"><title>2026-08-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(626.6 148.6)"><title>2026-08-31 · 8 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(597 124)"><title>2026-08-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="626.6" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Sep</text>
-<g transform="translate(626.6 162.2)"><title>2026-09-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(612 34)"><title>2026-08-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(626.6 175.8)"><title>2026-09-02 · 3 commits</title>
-<use href="#chip-3" xlink:href="#chip-3"/>
+<g transform="translate(612 49)"><title>2026-08-24 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(626.6 189.4)"><title>2026-09-03 · 27 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(612 64)"><title>2026-08-25 · 74 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l8"/>
 </g>
-<g transform="translate(626.6 203.0)"><title>2026-09-04 · 55 commits</title>
-<use href="#chip-8" xlink:href="#chip-8"/>
+<g transform="translate(612 79)"><title>2026-08-26 · 7 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(626.6 216.6)"><title>2026-09-05 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(612 94)"><title>2026-08-27 · 0 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l0"/>
 </g>
-<g transform="translate(640.2 135.0)"><title>2026-09-06 · 11 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(612 109)"><title>2026-08-28 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(640.2 148.6)"><title>2026-09-07 · 21 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(612 124)"><title>2026-08-29 · 84 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l9"/>
 </g>
-<g transform="translate(640.2 162.2)"><title>2026-09-08 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(627 34)"><title>2026-08-30 · 95 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l9"/>
 </g>
-<g transform="translate(640.2 175.8)"><title>2026-09-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(627 49)"><title>2026-08-31 · 8 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(640.2 189.4)"><title>2026-09-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(627 64)"><title>2026-09-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(640.2 203.0)"><title>2026-09-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(627 79)"><title>2026-09-02 · 3 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l3"/>
 </g>
-<g transform="translate(640.2 216.6)"><title>2026-09-12 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(627 94)"><title>2026-09-03 · 27 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(653.8 135.0)"><title>2026-09-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(627 109)"><title>2026-09-04 · 55 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l8"/>
 </g>
-<g transform="translate(653.8 148.6)"><title>2026-09-14 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(627 124)"><title>2026-09-05 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(653.8 162.2)"><title>2026-09-15 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 34)"><title>2026-09-06 · 11 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
 </g>
-<g transform="translate(653.8 175.8)"><title>2026-09-16 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 49)"><title>2026-09-07 · 21 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
 </g>
-<g transform="translate(653.8 189.4)"><title>2026-09-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 64)"><title>2026-09-08 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(653.8 203.0)"><title>2026-09-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 79)"><title>2026-09-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(653.8 216.6)"><title>2026-09-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 94)"><title>2026-09-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 135.0)"><title>2026-09-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 109)"><title>2026-09-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 148.6)"><title>2026-09-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(642 124)"><title>2026-09-12 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 162.2)"><title>2026-09-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 34)"><title>2026-09-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 175.8)"><title>2026-09-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 49)"><title>2026-09-14 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 189.4)"><title>2026-09-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 64)"><title>2026-09-15 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 203.0)"><title>2026-09-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 79)"><title>2026-09-16 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(667.4 216.6)"><title>2026-09-26 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 94)"><title>2026-09-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(681.0 135.0)"><title>2026-09-27 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 109)"><title>2026-09-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(681.0 148.6)"><title>2026-09-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(657 124)"><title>2026-09-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(681.0 162.2)"><title>2026-09-29 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 34)"><title>2026-09-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(681.0 175.8)"><title>2026-09-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 49)"><title>2026-09-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="681.0" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Oct</text>
-<g transform="translate(681.0 189.4)"><title>2026-10-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 64)"><title>2026-09-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(681.0 203.0)"><title>2026-10-02 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 79)"><title>2026-09-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(681.0 216.6)"><title>2026-10-03 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 94)"><title>2026-09-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 135.0)"><title>2026-10-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 109)"><title>2026-09-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 148.6)"><title>2026-10-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(672 124)"><title>2026-09-26 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 162.2)"><title>2026-10-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 34)"><title>2026-09-27 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 175.8)"><title>2026-10-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 49)"><title>2026-09-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 189.4)"><title>2026-10-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 64)"><title>2026-09-29 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 203.0)"><title>2026-10-09 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 79)"><title>2026-09-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(694.6 216.6)"><title>2026-10-10 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 94)"><title>2026-10-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 135.0)"><title>2026-10-11 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 109)"><title>2026-10-02 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 148.6)"><title>2026-10-12 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(687 124)"><title>2026-10-03 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 162.2)"><title>2026-10-13 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(702 34)"><title>2026-10-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 175.8)"><title>2026-10-14 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(702 49)"><title>2026-10-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 189.4)"><title>2026-10-15 · 6 commits</title>
-<use href="#chip-5" xlink:href="#chip-5"/>
+<g transform="translate(702 64)"><title>2026-10-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 203.0)"><title>2026-10-16 · 4 commits</title>
-<use href="#chip-4" xlink:href="#chip-4"/>
+<g transform="translate(702 79)"><title>2026-10-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(708.2 216.6)"><title>2026-10-17 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(702 94)"><title>2026-10-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(721.8 135.0)"><title>2026-10-18 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(702 109)"><title>2026-10-09 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(721.8 148.6)"><title>2026-10-19 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(702 124)"><title>2026-10-10 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(721.8 162.2)"><title>2026-10-20 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 34)"><title>2026-10-11 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(721.8 175.8)"><title>2026-10-21 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 49)"><title>2026-10-12 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(721.8 189.4)"><title>2026-10-22 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 64)"><title>2026-10-13 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(721.8 203.0)"><title>2026-10-23 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 79)"><title>2026-10-14 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(721.8 216.6)"><title>2026-10-24 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 94)"><title>2026-10-15 · 6 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l5"/>
 </g>
-<g transform="translate(735.4 135.0)"><title>2026-10-25 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 109)"><title>2026-10-16 · 4 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l4"/>
 </g>
-<g transform="translate(735.4 148.6)"><title>2026-10-26 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(717 124)"><title>2026-10-17 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(735.4 162.2)"><title>2026-10-27 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(732 34)"><title>2026-10-18 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(735.4 175.8)"><title>2026-10-28 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(732 49)"><title>2026-10-19 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(735.4 189.4)"><title>2026-10-29 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(732 64)"><title>2026-10-20 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(735.4 203.0)"><title>2026-10-30 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(732 79)"><title>2026-10-21 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(735.4 216.6)"><title>2026-10-31 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(732 94)"><title>2026-10-22 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<text x="749.0" y="125" fill="#c1c4b4" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">Nov</text>
-<g transform="translate(749.0 135.0)"><title>2026-11-01 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(732 109)"><title>2026-10-23 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(749.0 148.6)"><title>2026-11-02 · 0 commits</title>
-<use href="#socket" xlink:href="#socket"/>
+<g transform="translate(732 124)"><title>2026-10-24 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(749.0 162.2)"><title>2026-11-03 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(747 34)"><title>2026-10-25 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(749.0 175.8)"><title>2026-11-04 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(747 49)"><title>2026-10-26 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(749.0 189.4)"><title>2026-11-05 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(747 64)"><title>2026-10-27 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(749.0 203.0)"><title>2026-11-06 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(747 79)"><title>2026-10-28 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(749.0 216.6)"><title>2026-11-07 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(747 94)"><title>2026-10-29 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(762.6 135.0)"><title>2026-11-08 · 1 commits</title>
-<use href="#chip-1" xlink:href="#chip-1"/>
+<g transform="translate(747 109)"><title>2026-10-30 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(762.6 148.6)"><title>2026-11-09 · 0 commits</title>
-<use href="#socket" xlink:href="#socket"/>
+<g transform="translate(747 124)"><title>2026-10-31 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(762.6 162.2)"><title>2026-11-10 · 2 commits</title>
-<use href="#chip-2" xlink:href="#chip-2"/>
+<g transform="translate(762 34)"><title>2026-11-01 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(762.6 175.8)"><title>2026-11-11 · 31 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(762 49)"><title>2026-11-02 · 0 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l0"/>
 </g>
-<g transform="translate(762.6 189.4)"><title>2026-11-12 · 58 commits</title>
-<use href="#chip-8" xlink:href="#chip-8"/>
+<g transform="translate(762 64)"><title>2026-11-03 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
 </g>
-<g transform="translate(762.6 203.0)"><title>2026-11-13 · 108 commits</title>
-<use href="#chip-9" xlink:href="#chip-9"/>
+<g transform="translate(762 79)"><title>2026-11-04 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(762.6 216.6)"><title>2026-11-14 · 13 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(762 94)"><title>2026-11-05 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(776.2 135.0)"><title>2026-11-15 · 13 commits</title>
-<use href="#chip-6" xlink:href="#chip-6"/>
+<g transform="translate(762 109)"><title>2026-11-06 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(776.2 148.6)"><title>2026-11-16 · 138 commits</title>
-<use href="#chip-9" xlink:href="#chip-9"/>
+<g transform="translate(762 124)"><title>2026-11-07 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(776.2 162.2)"><title>2026-11-17 · 34 commits</title>
-<use href="#chip-7" xlink:href="#chip-7"/>
+<g transform="translate(777 34)"><title>2026-11-08 · 1 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l1"/>
 </g>
-<g transform="translate(776.2 175.8)"><title>2026-11-18 · 6 commits</title>
-<use href="#socket" xlink:href="#socket"/>
-<g class="parked"><use href="#chip-5" xlink:href="#chip-5"/></g><g class="cycle"><animate attributeName="opacity" values="0;1;1" keyTimes="0;.65;1" calcMode="discrete" dur="4.8s" fill="freeze"/><use href="#chip-5" xlink:href="#chip-5"/></g>
+<g transform="translate(777 49)"><title>2026-11-09 · 0 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l0"/>
 </g>
-<text x="59" y="157.6" fill="#b0b9ad" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10.5" font-weight="400" letter-spacing="0" text-anchor="end">M</text>
-<text x="59" y="184.8" fill="#b0b9ad" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10.5" font-weight="400" letter-spacing="0" text-anchor="end">W</text>
-<text x="59" y="212.0" fill="#b0b9ad" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10.5" font-weight="400" letter-spacing="0" text-anchor="end">F</text>
-<path d="M38 242H961" stroke="#101a18" stroke-width="6"/><path d="M38 240H961" stroke="#778073" stroke-width="1"/><path d="M38 243H961" stroke="#3c4742" stroke-width="1.5" stroke-dasharray="2 4"/>
-<g transform="translate(843 204) scale(1)"><path d="m-12-8 32 0 8 6v28h-40z" fill="#252f2e" stroke="#687064"/><path d="m-8-5 25 0 7 5H-8z" fill="#7e7e66"/><rect x="-8" y="1" width="31" height="21" rx="1" fill="#172322"/><path d="M-5 8h23m-23 4h23m-23 4h23" stroke="#a38b62" stroke-width="1.7"/><rect x="-5" y="-5" width="10" height="10" rx="1" fill="#f7cd8b" stroke="#a98958"/></g>
-<text x="961" y="123" fill="#a4ad9d" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" letter-spacing="1.2" text-anchor="end">FEEDER</text>
-<g class="parked"><g data-joint="base" transform="translate(899.00 242.00)"><g transform="scale(1)"><path d="M-24 4-20-3h40l5 7v5h-49z" fill="url(#steel)" stroke="#171e1c" stroke-width="2"/><rect x="-17" y="-10" width="33" height="13" rx="4" fill="url(#ceramic)" stroke="#454a40"/><path d="M-19 6h36" stroke="#c2c6ad" stroke-width="1.5"/></g></g><g data-joint="base" transform="translate(899.00 242.00)"><g data-joint="upper" transform="rotate(-74.15)"><g transform="scale(1)"><use href="#upper-casting" xlink:href="#upper-casting"/></g></g></g><g data-joint="elbow" transform="translate(921.94 161.19)"><g data-joint="lower" transform="rotate(-177.82)"><g transform="scale(1)"><use href="#forearm-casting" xlink:href="#forearm-casting"/></g></g></g><g data-joint="base" transform="translate(899.00 242.00)"><g transform="scale(1)"><use href="#bearing" xlink:href="#bearing"/></g></g><g data-joint="elbow" transform="translate(921.94 161.19)"><g transform="scale(1)"><use href="#bearing" xlink:href="#bearing"/></g></g><g data-joint="wrist" transform="translate(838.00 158.00)"><g transform="scale(1)"><g><path d="M-7 3v7l1.6 2" fill="none" stroke="#e0e5d2" stroke-linejoin="round" stroke-width="2.4"/></g><g><path d="M7 3v7l-1.6 2" fill="none" stroke="#e0e5d2" stroke-linejoin="round" stroke-width="2.4"/></g><rect x="-8" y="-6" width="16" height="10" rx="2.5" fill="url(#steel)" stroke="#29332f"/><circle cy="-2" r="3.2" fill="#d8c9a5"/><circle cy="-2" r="1.4" fill="#4d574c"/></g></g></g>
-<g class="cycle"><g data-joint="base" transform="translate(899.00 242.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;891.68 242.00;873.39 242.00;849.60 242.00;825.81 242.00;807.52 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;807.52 242.00;825.81 242.00;849.60 242.00;873.39 242.00;891.68 242.00;899.00 242.00" fill="freeze"/><g transform="scale(1)"><path d="M-24 4-20-3h40l5 7v5h-49z" fill="url(#steel)" stroke="#171e1c" stroke-width="2"/><rect x="-17" y="-10" width="33" height="13" rx="4" fill="url(#ceramic)" stroke="#454a40"/><path d="M-19 6h36" stroke="#c2c6ad" stroke-width="1.5"/></g></g><g data-joint="base" transform="translate(899.00 242.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;891.68 242.00;873.39 242.00;849.60 242.00;825.81 242.00;807.52 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;807.52 242.00;825.81 242.00;849.60 242.00;873.39 242.00;891.68 242.00;899.00 242.00" fill="freeze"/><g data-joint="upper" transform="rotate(-74.15)"><animateTransform attributeName="transform" type="rotate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="-74.15;-73.85;-73.33;-73.22;-73.83;-74.87;-75.44;-75.44;-75.07;-74.21;-73.25;-72.44;-71.93;-71.75;-69.46;-63.73;-56.39;-49.33;-44.22;-42.28;-42.28;-42.17;-41.91;-41.58;-41.27;-41.05;-40.96;-40.96;-41.05;-41.27;-41.58;-41.91;-42.17;-42.28;-44.80;-51.00;-58.82;-66.34;-71.95;-74.15" fill="freeze"/><g transform="scale(1)"><use href="#upper-casting" xlink:href="#upper-casting"/></g></g></g><g data-joint="elbow" transform="translate(921.94 161.19)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="921.94 161.19;922.37 161.32;923.10 161.53;923.25 161.58;922.40 161.32;920.93 160.91;920.12 160.70;920.12 160.70;920.64 160.84;921.86 161.17;923.21 161.57;924.34 161.91;925.06 162.14;925.31 162.23;921.16 163.34;910.56 166.67;896.10 172.04;880.56 178.29;867.72 183.42;862.35 185.49;862.35 185.49;862.46 185.61;862.72 185.89;863.03 186.25;863.33 186.59;863.55 186.84;863.64 186.94;863.64 186.94;863.55 186.84;863.33 186.59;863.03 186.25;862.72 185.89;862.46 185.61;862.35 185.49;867.13 182.81;878.68 176.72;893.09 170.14;907.09 165.06;917.71 162.13;921.94 161.19" fill="freeze"/><g data-joint="lower" transform="rotate(-177.82)"><animateTransform attributeName="transform" type="rotate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="-177.82;-179.56;-183.96;-189.89;-196.13;-201.23;-203.36;-203.36;-202.43;-200.15;-197.27;-194.46;-192.35;-191.52;-189.96;-185.73;-179.56;-172.79;-167.28;-165.04;-165.04;-165.32;-166.03;-166.96;-167.90;-168.63;-168.92;-168.92;-168.63;-167.90;-166.96;-166.03;-165.32;-165.04;-166.62;-170.11;-173.69;-176.21;-177.47;-177.82" fill="freeze"/><g transform="scale(1)"><use href="#forearm-casting" xlink:href="#forearm-casting"/></g></g></g><g data-joint="base" transform="translate(899.00 242.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;899.00 242.00;891.68 242.00;873.39 242.00;849.60 242.00;825.81 242.00;807.52 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;800.20 242.00;807.52 242.00;825.81 242.00;849.60 242.00;873.39 242.00;891.68 242.00;899.00 242.00" fill="freeze"/><g transform="scale(1)"><use href="#bearing" xlink:href="#bearing"/></g></g><g data-joint="elbow" transform="translate(921.94 161.19)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="921.94 161.19;922.37 161.32;923.10 161.53;923.25 161.58;922.40 161.32;920.93 160.91;920.12 160.70;920.12 160.70;920.64 160.84;921.86 161.17;923.21 161.57;924.34 161.91;925.06 162.14;925.31 162.23;921.16 163.34;910.56 166.67;896.10 172.04;880.56 178.29;867.72 183.42;862.35 185.49;862.35 185.49;862.46 185.61;862.72 185.89;863.03 186.25;863.33 186.59;863.55 186.84;863.64 186.94;863.64 186.94;863.55 186.84;863.33 186.59;863.03 186.25;862.72 185.89;862.46 185.61;862.35 185.49;867.13 182.81;878.68 176.72;893.09 170.14;907.09 165.06;917.71 162.13;921.94 161.19" fill="freeze"/><g transform="scale(1)"><use href="#bearing" xlink:href="#bearing"/></g></g><g data-joint="wrist" transform="translate(838.00 158.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="838.00 158.00;838.37 160.67;839.30 167.33;840.50 176.00;841.70 184.67;842.63 191.33;843.00 194.00;843.00 194.00;843.00 192.89;843.00 190.11;843.00 186.50;843.00 182.89;843.00 180.11;843.00 179.00;838.42 177.87;826.98 175.06;812.10 171.40;797.22 167.74;785.78 164.93;781.20 163.80;781.20 163.80;781.20 164.32;781.20 165.61;781.20 167.30;781.20 168.99;781.20 170.28;781.20 170.80;781.20 170.80;781.20 170.28;781.20 168.99;781.20 167.30;781.20 165.61;781.20 164.32;781.20 163.80;785.41 163.37;795.93 162.30;809.60 160.90;823.27 159.50;833.79 158.43;838.00 158.00" fill="freeze"/><g transform="scale(1)"><rect x="-4" y="6" width="8" height="8" rx="1.2" fill="#d28ba7" opacity="0"><animate attributeName="opacity" dur="4.8s" values="0;1;0;0" keyTimes="0;.23;.65;1" calcMode="discrete" fill="freeze"/></rect><g><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0;.15;.23;.60;.65;.71;1" values="0 0;0 0;2 0;2 0;2 0;0 0;0 0" fill="freeze"/><path d="M-7 3v7l1.6 2" fill="none" stroke="#e0e5d2" stroke-linejoin="round" stroke-width="2.4"/></g><g><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0;.15;.23;.60;.65;.71;1" values="0 0;0 0;-2 0;-2 0;-2 0;0 0;0 0" fill="freeze"/><path d="M7 3v7l-1.6 2" fill="none" stroke="#e0e5d2" stroke-linejoin="round" stroke-width="2.4"/></g><rect x="-8" y="-6" width="16" height="10" rx="2.5" fill="url(#steel)" stroke="#29332f"/><circle cy="-2" r="3.2" fill="#d8c9a5"/><circle cy="-2" r="1.4" fill="#4d574c"/></g></g></g>
-<text x="29" y="288" fill="#b0b9ad" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" letter-spacing="1.3" text-anchor="start">LATEST CHIP</text>
-<text x="29" y="311" fill="#f1eddd" font-family="'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="17" font-weight="550" letter-spacing="0" text-anchor="start">Nov 18  ·  6 commits</text>
-<text x="971" y="288" fill="#b0b9ad" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" letter-spacing="1.3" text-anchor="end">COMMITS PER DAY</text>
-<g transform="translate(314 301)"><use href="#socket" xlink:href="#socket"/></g>
-<text x="328" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">0</text>
-<g transform="translate(381 301)"><use href="#chip-1" xlink:href="#chip-1"/></g>
-<text x="395" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">1</text>
-<g transform="translate(448 301)"><use href="#chip-2" xlink:href="#chip-2"/></g>
-<text x="462" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">2</text>
-<g transform="translate(515 301)"><use href="#chip-3" xlink:href="#chip-3"/></g>
-<text x="529" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">3</text>
-<g transform="translate(582 301)"><use href="#chip-4" xlink:href="#chip-4"/></g>
-<text x="596" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">4–5</text>
-<g transform="translate(649 301)"><use href="#chip-5" xlink:href="#chip-5"/></g>
-<text x="663" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">6–9</text>
-<g transform="translate(716 301)"><use href="#chip-6" xlink:href="#chip-6"/></g>
-<text x="730" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">10–19</text>
-<g transform="translate(783 301)"><use href="#chip-7" xlink:href="#chip-7"/></g>
-<text x="797" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">20–39</text>
-<g transform="translate(850 301)"><use href="#chip-8" xlink:href="#chip-8"/></g>
-<text x="864" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">40–79</text>
-<g transform="translate(917 301)"><use href="#chip-9" xlink:href="#chip-9"/></g>
-<text x="931" y="310" fill="#f1eddd" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace" font-size="11.5" font-weight="400" letter-spacing="0" text-anchor="start">80+</text>
+<g transform="translate(777 64)"><title>2026-11-10 · 2 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l2"/>
+</g>
+<g transform="translate(777 79)"><title>2026-11-11 · 31 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
+</g>
+<g transform="translate(777 94)"><title>2026-11-12 · 58 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l8"/>
+</g>
+<g transform="translate(777 109)"><title>2026-11-13 · 108 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l9"/>
+</g>
+<g transform="translate(777 124)"><title>2026-11-14 · 13 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
+</g>
+<g transform="translate(792 34)"><title>2026-11-15 · 13 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l6"/>
+</g>
+<g transform="translate(792 49)"><title>2026-11-16 · 138 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l9"/>
+</g>
+<g transform="translate(792 64)"><title>2026-11-17 · 34 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l7"/>
+</g>
+<g transform="translate(792 79)"><title>2026-11-18 · 6 commits</title>
+<rect width="11.5" height="11.5" rx="2.6" class="l0"/>
+<g class="parked"><rect width="11.5" height="11.5" rx="2.6" class="l5"/></g><g class="cycle"><animate attributeName="opacity" dur="4.8s" values="0;1;1" keyTimes="0;.65;1" calcMode="discrete" fill="freeze"/><rect width="11.5" height="11.5" rx="2.6" class="l5"/></g>
+</g>
+<g class="parked"><g data-joint="base" transform="translate(934.00 146.00)"><use href="#turntable" xlink:href="#turntable"/></g><g data-joint="shoulder" transform="translate(912.00 108.00)"><g data-joint="upper" transform="rotate(-56.81)"><use href="#upper-shell" xlink:href="#upper-shell"/></g></g><g data-joint="elbow" transform="translate(947.58 53.60)"><g data-joint="lower" transform="rotate(173.46)"><use href="#forearm-shell" xlink:href="#forearm-shell"/></g></g><g data-joint="shoulder" transform="translate(912.00 108.00)"><use href="#rotary" xlink:href="#rotary"/></g><g data-joint="elbow" transform="translate(947.58 53.60)"><use href="#rotary" xlink:href="#rotary"/></g><g data-joint="flange" transform="translate(883.00 61.00)"><ellipse rx="5.7" ry="6.8" fill="url(#rubber)" stroke="#aab4b6"/></g><g data-joint="wrist" transform="translate(869.00 75.00)"><g><path d="M-8 1v10l2 2" fill="none" stroke="#66737a" stroke-width="2.5" stroke-linejoin="round"/></g><g><path d="M8 1v10l-2 2" fill="none" stroke="#66737a" stroke-width="2.5" stroke-linejoin="round"/></g><path d="M15-18Q19-16 17-11l-6 9Q8 2 3 2h-9l-1-5q4-2 5-5l3-8q2-4 7-3Z" fill="url(#shell)" stroke="#89959b" stroke-width="1.2"/><path d="m7-17 6-1 3 1-1.6 4-7 1z" fill="#38434a"/><rect x="-9" y="-3" width="18" height="6" rx="2" fill="url(#rubber)" stroke="#6e7a80" stroke-width=".7"/></g></g>
+<g class="cycle"><rect x="850" y="110" width="10" height="10" rx="2" class="l5" opacity="0"><animate attributeName="opacity" values="1;0;0" keyTimes="0;.23;1" calcMode="discrete" dur="4.8s" fill="freeze"/></rect><g data-joint="base" transform="translate(934.00 146.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;934.00 146.00;930.50 146.00;921.75 146.00;910.38 146.00;899.00 146.00;890.25 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;886.75 146.00;890.25 146.00;899.00 146.00;910.38 146.00;921.75 146.00;930.50 146.00;934.00 146.00" fill="freeze"/><use href="#turntable" xlink:href="#turntable"/></g><g data-joint="shoulder" transform="translate(912.00 108.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;908.50 108.00;899.75 108.00;888.38 108.00;877.00 108.00;868.25 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;868.25 108.00;877.00 108.00;888.38 108.00;899.75 108.00;908.50 108.00;912.00 108.00" fill="freeze"/><g data-joint="upper" transform="rotate(-56.81)"><animateTransform attributeName="transform" type="rotate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="-56.81;-58.34;-62.78;-69.83;-78.21;-85.33;-88.30;-88.30;-87.33;-85.03;-82.32;-79.93;-78.30;-77.69;-77.36;-76.92;-77.08;-77.93;-79.00;-79.51;-79.51;-79.57;-79.76;-80.09;-80.54;-80.96;-81.14;-81.14;-80.96;-80.54;-80.09;-79.76;-79.57;-79.51;-77.95;-74.01;-68.74;-63.20;-58.70;-56.81" fill="freeze"/><use href="#upper-shell" xlink:href="#upper-shell"/></g></g><g data-joint="elbow" transform="translate(947.58 53.60)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="947.58 53.60;946.11 52.67;941.74 50.20;934.41 46.99;925.29 44.37;917.29 43.22;913.93 43.03;913.93 43.03;915.03 43.07;917.63 43.24;920.68 43.58;923.37 44.00;925.18 44.35;925.85 44.49;922.73 44.58;914.47 44.69;902.91 44.65;890.59 44.44;880.66 44.20;876.58 44.09;876.58 44.09;876.52 44.07;876.31 44.04;875.93 43.97;875.43 43.88;874.97 43.81;874.76 43.77;874.76 43.77;874.97 43.81;875.43 43.88;875.93 43.97;876.31 44.04;876.52 44.07;876.58 44.09;881.82 44.43;894.91 45.51;911.95 47.42;929.05 49.98;942.27 52.46;947.58 53.60" fill="freeze"/><g data-joint="lower" transform="rotate(173.46)"><animateTransform attributeName="transform" type="rotate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="173.46;170.72;163.63;153.98;144.11;136.63;133.73;133.73;135.09;138.43;142.67;146.76;149.81;151.01;153.10;158.10;164.17;169.92;174.20;175.89;175.89;175.15;173.32;170.90;168.45;166.54;165.77;165.77;166.54;168.45;170.90;173.32;175.15;175.89;175.39;174.34;173.42;173.07;173.26;173.46" fill="freeze"/><use href="#forearm-shell" xlink:href="#forearm-shell"/></g></g><g data-joint="shoulder" transform="translate(912.00 108.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;912.00 108.00;908.50 108.00;899.75 108.00;888.38 108.00;877.00 108.00;868.25 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;864.75 108.00;868.25 108.00;877.00 108.00;888.38 108.00;899.75 108.00;908.50 108.00;912.00 108.00" fill="freeze"/><use href="#rotary" xlink:href="#rotary"/></g><g data-joint="elbow" transform="translate(947.58 53.60)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="947.58 53.60;946.11 52.67;941.74 50.20;934.41 46.99;925.29 44.37;917.29 43.22;913.93 43.03;913.93 43.03;915.03 43.07;917.63 43.24;920.68 43.58;923.37 44.00;925.18 44.35;925.85 44.49;922.73 44.58;914.47 44.69;902.91 44.65;890.59 44.44;880.66 44.20;876.58 44.09;876.58 44.09;876.52 44.07;876.31 44.04;875.93 43.97;875.43 43.88;874.97 43.81;874.76 43.77;874.76 43.77;874.97 43.81;875.43 43.88;875.93 43.97;876.31 44.04;876.52 44.07;876.58 44.09;881.82 44.43;894.91 45.51;911.95 47.42;929.05 49.98;942.27 52.46;947.58 53.60" fill="freeze"/><use href="#rotary" xlink:href="#rotary"/></g><g data-joint="flange" transform="translate(883.00 61.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="883.00 61.00;881.96 63.15;879.37 68.52;876.00 75.50;872.63 82.48;870.04 87.85;869.00 90.00;869.00 90.00;869.00 88.96;869.00 86.37;869.00 83.00;869.00 79.63;869.00 77.04;869.00 76.00;864.76 73.98;854.16 68.94;840.38 62.38;826.59 55.81;815.99 50.77;811.75 48.75;811.75 48.75;811.75 49.56;811.75 51.60;811.75 54.25;811.75 56.90;811.75 58.94;811.75 59.75;811.75 59.75;811.75 58.94;811.75 56.90;811.75 54.25;811.75 51.60;811.75 49.56;811.75 48.75;817.03 49.66;830.22 51.93;847.38 54.88;864.53 57.82;877.72 60.09;883.00 61.00" fill="freeze"/><ellipse rx="5.7" ry="6.8" fill="url(#rubber)" stroke="#aab4b6"/></g><g data-joint="wrist" transform="translate(869.00 75.00)"><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0.0000;0.0267;0.0533;0.0800;0.1067;0.1333;0.1600;0.2300;0.2433;0.2567;0.2700;0.2833;0.2967;0.3100;0.3417;0.3733;0.4050;0.4367;0.4683;0.5000;0.5500;0.5667;0.5833;0.6000;0.6167;0.6333;0.6500;0.7100;0.7233;0.7367;0.7500;0.7633;0.7767;0.7900;0.8250;0.8600;0.8950;0.9300;0.9650;1.0000" values="869.00 75.00;867.96 77.15;865.37 82.52;862.00 89.50;858.63 96.48;856.04 101.85;855.00 104.00;855.00 104.00;855.00 102.96;855.00 100.37;855.00 97.00;855.00 93.63;855.00 91.04;855.00 90.00;850.76 87.98;840.16 82.94;826.38 76.38;812.59 69.81;801.99 64.77;797.75 62.75;797.75 62.75;797.75 63.56;797.75 65.60;797.75 68.25;797.75 70.90;797.75 72.94;797.75 73.75;797.75 73.75;797.75 72.94;797.75 70.90;797.75 68.25;797.75 65.60;797.75 63.56;797.75 62.75;803.03 63.66;816.22 65.93;833.38 68.88;850.53 71.82;863.72 74.09;869.00 75.00" fill="freeze"/><rect x="-5" y="6" width="10" height="10" rx="2" class="l5" opacity="0"><animate attributeName="opacity" dur="4.8s" values="0;1;0;0" keyTimes="0;.23;.65;1" calcMode="discrete" fill="freeze"/></rect><g><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0;.16;.23;.6;.65;.71;1" values="0 0;0 0;2 0;2 0;2 0;0 0;0 0" fill="freeze"/><path d="M-8 1v10l2 2" fill="none" stroke="#66737a" stroke-width="2.5" stroke-linejoin="round"/></g><g><animateTransform attributeName="transform" type="translate" dur="4.8s" keyTimes="0;.16;.23;.6;.65;.71;1" values="0 0;0 0;-2 0;-2 0;-2 0;0 0;0 0" fill="freeze"/><path d="M8 1v10l-2 2" fill="none" stroke="#66737a" stroke-width="2.5" stroke-linejoin="round"/></g><path d="M15-18Q19-16 17-11l-6 9Q8 2 3 2h-9l-1-5q4-2 5-5l3-8q2-4 7-3Z" fill="url(#shell)" stroke="#89959b" stroke-width="1.2"/><path d="m7-17 6-1 3 1-1.6 4-7 1z" fill="#38434a"/><rect x="-9" y="-3" width="18" height="6" rx="2" fill="url(#rubber)" stroke="#6e7a80" stroke-width=".7"/></g></g>
 </svg>

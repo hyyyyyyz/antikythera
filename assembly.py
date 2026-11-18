@@ -15,16 +15,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--username", required=True)
     parser.add_argument("--output", type=Path, default=Path("assembly-log.svg"))
-    parser.add_argument("--compact-output", type=Path, help="Optional portrait SVG with two calendar bands")
+    parser.add_argument("--compact-output", type=Path, help="Optional second path for the same single-strip SVG")
     args = parser.parse_args()
     if args.compact_output and args.output.resolve() == args.compact_output.resolve():
         parser.error("the regular and compact outputs need different file paths")
     end = datetime.now(timezone.utc).date()
     counts = daily_commits(args.username, end - timedelta(days=364), end)
-    drawings = [(args.output, render(args.username, end, counts))]
+    drawing = render(args.username, end, counts)
+    outputs = [args.output]
     if args.compact_output:
-        drawings.append((args.compact_output, render(args.username, end, counts, compact=True)))
-    for output, drawing in drawings:
+        outputs.append(args.compact_output)
+    for output in outputs:
         output.parent.mkdir(parents=True, exist_ok=True)
         with NamedTemporaryFile(mode="w", encoding="utf-8", dir=output.parent, delete=False) as temp:
             temp.write(drawing)
